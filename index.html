@@ -1,613 +1,573 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2636
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;\red109\green109\blue109;\red236\green241\blue247;\red251\green0\blue7;
-\red0\green0\blue0;\red42\green42\blue42;\red107\green0\blue1;\red0\green0\blue255;\red111\green14\blue195;
-\red9\green60\blue148;\red24\green112\blue43;\red19\green118\blue70;\red77\green80\blue85;}
-{\*\expandedcolortbl;;\cssrgb\c50196\c50196\c50196;\cssrgb\c94118\c95686\c97647;\cssrgb\c100000\c0\c0;
-\cssrgb\c0\c0\c0;\cssrgb\c21961\c21961\c21961;\cssrgb\c50196\c0\c0;\cssrgb\c0\c0\c100000;\cssrgb\c51765\c18824\c80784;
-\cssrgb\c1569\c31765\c64706;\cssrgb\c9412\c50196\c21961;\cssrgb\c3529\c52549\c34510;\cssrgb\c37255\c38824\c40784;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\deftab720
-\pard\pardeftab720\partightenfactor0
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iQAgri Super App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #eef2f6;
+            min-height: 100vh;
+            overflow-y: auto; 
+            padding: 20px;
+        }
 
-\f0\fs28 \cf2 \cb3 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 <!DOCTYPE\cf4 \strokec4  html\cf2 \strokec2 >\cf0 \cb1 \strokec5 \
-\pard\pardeftab720\partightenfactor0
-\cf6 \cb3 \strokec6 <\cf7 \strokec7 html\cf0 \strokec5  \cf4 \strokec4 lang\cf6 \strokec6 =\cf8 \strokec8 "en"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
-\cf6 \cb3 \strokec6 <\cf7 \strokec7 head\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
-\pard\pardeftab720\partightenfactor0
-\cf0 \cb3     \cf6 \strokec6 <\cf7 \strokec7 meta\cf0 \strokec5  \cf4 \strokec4 charset\cf6 \strokec6 =\cf8 \strokec8 "UTF-8"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
-\cb3     \cf6 \strokec6 <\cf7 \strokec7 meta\cf0 \strokec5  \cf4 \strokec4 name\cf6 \strokec6 =\cf8 \strokec8 "viewport"\cf0 \strokec5  \cf4 \strokec4 content\cf6 \strokec6 =\cf8 \strokec8 "width=device-width, initial-scale=1.0"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
-\cb3     \cf6 \strokec6 <\cf7 \strokec7 title\cf6 \strokec6 >\cf0 \strokec5 iQAgri Super App\cf6 \strokec6 </\cf7 \strokec7 title\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
-\cb3     \cf6 \strokec6 <\cf7 \strokec7 script\cf0 \strokec5  \cf4 \strokec4 src\cf6 \strokec6 =\cf8 \strokec8 "https://cdn.tailwindcss.com"\cf6 \strokec6 ></\cf7 \strokec7 script\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
-\cb3     \cf6 \strokec6 <\cf7 \strokec7 link\cf0 \strokec5  \cf4 \strokec4 rel\cf6 \strokec6 =\cf8 \strokec8 "stylesheet"\cf0 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf8 \strokec8 "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
-\cb3     \cf6 \strokec6 <\cf7 \strokec7 style\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
-\cb3         \cf9 \strokec9 @import\cf0 \strokec5  \cf10 \strokec10 url\cf0 \strokec5 (\cf11 \strokec11 'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap'\cf0 \strokec5 );\cb1 \
-\cb3         \cb1 \
-\cb3         \cf7 \strokec7 body\cf0 \strokec5  \{\cb1 \
-\cb3             \cf4 \strokec4 font-family:\cf0 \strokec5  \cf11 \strokec11 'Inter'\cf0 \strokec5 , \cf10 \strokec10 sans-serif\cf0 \strokec5 ;\cb1 \
-\cb3             \cf4 \strokec4 background-color:\cf0 \strokec5  \cf10 \strokec10 #eef2f6\cf0 \strokec5 ;\cb1 \
-\cb3             \cf4 \strokec4 min-height:\cf0 \strokec5  \cf12 \strokec12 100vh\cf0 \strokec5 ;\cb1 \
-\cb3             \cf4 \strokec4 overflow-y:\cf0 \strokec5  \cf10 \strokec10 auto\cf0 \strokec5 ; \cb1 \
-\cb3             \cf4 \strokec4 padding:\cf0 \strokec5  \cf12 \strokec12 20px\cf0 \strokec5 ;\cb1 \
-\cb3         \}\cb1 \
-\
-\cb3         \cf13 \strokec13 /* Phone Frame */\cf0 \cb1 \strokec5 \
-\cb3         \cf7 \strokec7 .phone-frame\cf0 \strokec5  \{\cb1 \
-\cb3             \cf4 \strokec4 width:\cf0 \strokec5  \cf12 \strokec12 375px\cf0 \strokec5 ;\cb1 \
-\cb3             \cf4 \strokec4 height:\cf0 \strokec5  \cf12 \strokec12 800px\cf0 \strokec5 ;\cb1 \
-\cb3             \cf4 \strokec4 max-height:\cf0 \strokec5  \cf12 \strokec12 85vh\cf0 \strokec5 ; \cb1 \
-\cb3             \cf4 \strokec4 background:\cf0 \strokec5  \cf10 \strokec10 #fff\cf0 \strokec5 ;\cb1 \
-\cb3             \cf4 \strokec4 border-radius:\cf0 \strokec5  \cf12 \strokec12 40px\cf0 \strokec5 ;\cb1 \
-\cb3             \cf4 \strokec4 box-shadow:\cf0 \strokec5  \cf12 \strokec12 0\cf0 \strokec5  \cf12 \strokec12 25px\cf0 \strokec5  \cf12 \strokec12 50px\cf0 \strokec5  \cf12 \strokec12 -12px\cf0 \strokec5  \cf10 \strokec10 rgba(\cf12 \strokec12 0\cf0 \strokec5 , \cf12 \strokec12 0\cf0 \strokec5 , \cf12 \strokec12 0\cf0 \strokec5 , \cf12 \strokec12 0.25\cf10 \strokec10 )\cf0 \strokec5 ;\cb1 \
-\cb3             \cf4 \strokec4 position:\cf0 \strokec5  \cf10 \strokec10 relative\cf0 \strokec5 ;\cb1 \
-\cb3             \cf4 \strokec4 overflow:\cf0 \strokec5  \cf10 \strokec10 hidden\cf0 \strokec5 ;\cb1 \
-\cb3             \cf4 \strokec4 border:\cf0 \strokec5  \cf12 \strokec12 8px\cf0 \strokec5  \cf10 \strokec10 solid\cf0 \strokec5  \cf10 \strokec10 #1a1a1a\cf0 \strokec5 ;\cb1 \
-\cb3             \cf4 \strokec4 display:\cf0 \strokec5  \cf10 \strokec10 flex\cf0 \strokec5 ;\cb1 \
-\cb3             \cf4 \strokec4 flex-direction:\cf0 \strokec5  \cf10 \strokec10 column\cf0 \strokec5 ;\cb1 \
-\cb3             \cf4 \strokec4 margin:\cf0 \strokec5  \cf12 \strokec12 0\cf0 \strokec5  \cf10 \strokec10 auto\cf0 \strokec5 ; \cb1 \
-\cb3         \}\cb1 \
-\
-\cb3         \cf7 \strokec7 .notch\cf0 \strokec5  \{\cb1 \
-\cb3             \cf4 \strokec4 position:\cf0 \strokec5  \cf10 \strokec10 absolute\cf0 \strokec5 ;\cb1 \
-\cb3             \cf4 \strokec4 top:\cf0 \strokec5  \cf12 \strokec12 0\cf0 \strokec5 ;\cb1 \
-\cb3             \cf4 \strokec4 left:\cf0 \strokec5  \cf12 \strokec12 50%\cf0 \strokec5 ;\cb1 \
-\cb3             \cf4 \strokec4 transform:\cf0 \strokec5  \cf10 \strokec10 translateX(\cf12 \strokec12 -50%\cf10 \strokec10 )\cf0 \strokec5 ;\cb1 \
-\cb3             \cf4 \strokec4 width:\cf0 \strokec5  \cf12 \strokec12 120px\cf0 \strokec5 ;\cb1 \
-\cb3             \cf4 \strokec4 height:\cf0 \strokec5  \cf12 \strokec12 25px\cf0 \strokec5 ;\cb1 \
-\cb3             \cf4 \strokec4 background:\cf0 \strokec5  \cf10 \strokec10 #1a1a1a\cf0 \strokec5 ;\cb1 \
-\cb3             \cf4 \strokec4 border-bottom-left-radius:\cf0 \strokec5  \cf12 \strokec12 12px\cf0 \strokec5 ;\cb1 \
-\cb3             \cf4 \strokec4 border-bottom-right-radius:\cf0 \strokec5  \cf12 \strokec12 12px\cf0 \strokec5 ;\cb1 \
-\cb3             \cf4 \strokec4 z-index:\cf0 \strokec5  \cf12 \strokec12 50\cf0 \strokec5 ;\cb1 \
-\cb3         \}\cb1 \
-\
-\cb3         \cf7 \strokec7 .no-scrollbar::-webkit-scrollbar\cf0 \strokec5  \{ \cf4 \strokec4 display:\cf0 \strokec5  \cf10 \strokec10 none\cf0 \strokec5 ; \}\cb1 \
-\cb3         \cf7 \strokec7 .no-scrollbar\cf0 \strokec5  \{ \cf4 \strokec4 -ms-overflow-style:\cf0 \strokec5  \cf10 \strokec10 none\cf0 \strokec5 ; \cf4 \strokec4 scrollbar-width:\cf0 \strokec5  \cf10 \strokec10 none\cf0 \strokec5 ; \}\cb1 \
-\
-\cb3         \cf7 \strokec7 .slide-up\cf0 \strokec5  \{ \cf4 \strokec4 animation:\cf0 \strokec5  \cf10 \strokec10 slideUp\cf0 \strokec5  \cf12 \strokec12 0.3s\cf0 \strokec5  \cf10 \strokec10 ease-out\cf0 \strokec5  \cf10 \strokec10 forwards\cf0 \strokec5 ; \}\cb1 \
-\cb3         \cf9 \strokec9 @keyframes\cf0 \strokec5  \cf10 \strokec10 slideUp\cf0 \strokec5  \{ \cf10 \strokec10 from\cf0 \strokec5  \{ \cf4 \strokec4 transform:\cf0 \strokec5  \cf10 \strokec10 translateY(\cf12 \strokec12 100%\cf10 \strokec10 )\cf0 \strokec5 ; \} \cf10 \strokec10 to\cf0 \strokec5  \{ \cf4 \strokec4 transform:\cf0 \strokec5  \cf10 \strokec10 translateY(\cf12 \strokec12 0\cf10 \strokec10 )\cf0 \strokec5 ; \} \}\cb1 \
-\cb3         \cb1 \
-\cb3         \cf7 \strokec7 .fade-in\cf0 \strokec5  \{ \cf4 \strokec4 animation:\cf0 \strokec5  \cf10 \strokec10 fadeIn\cf0 \strokec5  \cf12 \strokec12 0.3s\cf0 \strokec5  \cf10 \strokec10 ease-out\cf0 \strokec5  \cf10 \strokec10 forwards\cf0 \strokec5 ; \}\cb1 \
-\cb3         \cf9 \strokec9 @keyframes\cf0 \strokec5  \cf10 \strokec10 fadeIn\cf0 \strokec5  \{ \cf10 \strokec10 from\cf0 \strokec5  \{ \cf4 \strokec4 opacity:\cf0 \strokec5  \cf12 \strokec12 0\cf0 \strokec5 ; \} \cf10 \strokec10 to\cf0 \strokec5  \{ \cf4 \strokec4 opacity:\cf0 \strokec5  \cf12 \strokec12 1\cf0 \strokec5 ; \} \}\cb1 \
-\
-\cb3         \cf13 \strokec13 /* Strategy & UI Badges */\cf0 \cb1 \strokec5 \
-\cb3         \cf7 \strokec7 .strategy-badge\cf0 \strokec5  \{\cb1 \
-\cb3             \cf4 \strokec4 position:\cf0 \strokec5  \cf10 \strokec10 absolute\cf0 \strokec5 ;\cb1 \
-\cb3             \cf4 \strokec4 z-index:\cf0 \strokec5  \cf12 \strokec12 40\cf0 \strokec5 ;\cb1 \
-\cb3             \cf4 \strokec4 background:\cf0 \strokec5  \cf10 \strokec10 rgba(\cf12 \strokec12 255\cf0 \strokec5 , \cf12 \strokec12 215\cf0 \strokec5 , \cf12 \strokec12 0\cf0 \strokec5 , \cf12 \strokec12 0.95\cf10 \strokec10 )\cf0 \strokec5 ;\cb1 \
-\cb3             \cf4 \strokec4 color:\cf0 \strokec5  \cf10 \strokec10 #744210\cf0 \strokec5 ;\cb1 \
-\cb3             \cf4 \strokec4 font-weight:\cf0 \strokec5  \cf10 \strokec10 bold\cf0 \strokec5 ;\cb1 \
-\cb3             \cf4 \strokec4 font-size:\cf0 \strokec5  \cf12 \strokec12 10px\cf0 \strokec5 ;\cb1 \
-\cb3             \cf4 \strokec4 padding:\cf0 \strokec5  \cf12 \strokec12 2px\cf0 \strokec5  \cf12 \strokec12 6px\cf0 \strokec5 ;\cb1 \
-\cb3             \cf4 \strokec4 border-radius:\cf0 \strokec5  \cf12 \strokec12 4px\cf0 \strokec5 ;\cb1 \
-\cb3             \cf4 \strokec4 border:\cf0 \strokec5  \cf12 \strokec12 1px\cf0 \strokec5  \cf10 \strokec10 solid\cf0 \strokec5  \cf10 \strokec10 #b7791f\cf0 \strokec5 ;\cb1 \
-\cb3             \cf4 \strokec4 box-shadow:\cf0 \strokec5  \cf12 \strokec12 0\cf0 \strokec5  \cf12 \strokec12 2px\cf0 \strokec5  \cf12 \strokec12 4px\cf0 \strokec5  \cf10 \strokec10 rgba(\cf12 \strokec12 0\cf0 \strokec5 ,\cf12 \strokec12 0\cf0 \strokec5 ,\cf12 \strokec12 0\cf0 \strokec5 ,\cf12 \strokec12 0.2\cf10 \strokec10 )\cf0 \strokec5 ;\cb1 \
-\cb3             \cf4 \strokec4 pointer-events:\cf0 \strokec5  \cf10 \strokec10 none\cf0 \strokec5 ;\cb1 \
-\cb3             \cf4 \strokec4 display:\cf0 \strokec5  \cf10 \strokec10 none\cf0 \strokec5 ; \cb1 \
-\cb3         \}\cb1 \
-\cb3         \cf7 \strokec7 .show-strategy\cf0 \strokec5  \cf7 \strokec7 .strategy-badge\cf0 \strokec5  \{ \cf4 \strokec4 display:\cf0 \strokec5  \cf10 \strokec10 block\cf0 \strokec5 ; \}\cb1 \
-\cb3         \cf7 \strokec7 .show-strategy\cf0 \strokec5  \cf7 \strokec7 .monetizable\cf0 \strokec5  \{ \cf4 \strokec4 border:\cf0 \strokec5  \cf12 \strokec12 2px\cf0 \strokec5  \cf10 \strokec10 dashed\cf0 \strokec5  \cf10 \strokec10 #ecc94b\cf0 \strokec5 ; \cf4 \strokec4 position:\cf0 \strokec5  \cf10 \strokec10 relative\cf0 \strokec5 ; \}\cb1 \
-\cb3         \cf7 \strokec7 .show-strategy\cf0 \strokec5  \cf7 \strokec7 .premium-feature\cf0 \strokec5  \{ \cf4 \strokec4 border:\cf0 \strokec5  \cf12 \strokec12 2px\cf0 \strokec5  \cf10 \strokec10 dashed\cf0 \strokec5  \cf10 \strokec10 #a855f7\cf0 \strokec5 ; \cf4 \strokec4 position:\cf0 \strokec5  \cf10 \strokec10 relative\cf0 \strokec5 ; \}\cb1 \
-\cb3         \cf7 \strokec7 .premium-badge\cf0 \strokec5  \{ \cf4 \strokec4 background:\cf0 \strokec5  \cf10 \strokec10 rgba(\cf12 \strokec12 168\cf0 \strokec5 , \cf12 \strokec12 85\cf0 \strokec5 , \cf12 \strokec12 247\cf0 \strokec5 , \cf12 \strokec12 0.95\cf10 \strokec10 )\cf0 \strokec5 ; \cf4 \strokec4 color:\cf0 \strokec5  \cf10 \strokec10 white\cf0 \strokec5 ; \cf4 \strokec4 border:\cf0 \strokec5  \cf12 \strokec12 1px\cf0 \strokec5  \cf10 \strokec10 solid\cf0 \strokec5  \cf10 \strokec10 #7e22ce\cf0 \strokec5 ; \}\cb1 \
-\
-\cb3         \cf13 \strokec13 /* Chat Bubble */\cf0 \cb1 \strokec5 \
-\cb3         \cf7 \strokec7 .chat-bubble\cf0 \strokec5  \{ \cf4 \strokec4 position:\cf0 \strokec5  \cf10 \strokec10 relative\cf0 \strokec5 ; \}\cb1 \
-\cb3         \cf7 \strokec7 .chat-bubble::after\cf0 \strokec5  \{\cb1 \
-\cb3             \cf4 \strokec4 content:\cf0 \strokec5  \cf11 \strokec11 '2'\cf0 \strokec5 ;\cb1 \
-\cb3             \cf4 \strokec4 position:\cf0 \strokec5  \cf10 \strokec10 absolute\cf0 \strokec5 ;\cb1 \
-\cb3             \cf4 \strokec4 top:\cf0 \strokec5  \cf12 \strokec12 -5px\cf0 \strokec5 ;\cb1 \
-\cb3             \cf4 \strokec4 right:\cf0 \strokec5  \cf12 \strokec12 -5px\cf0 \strokec5 ;\cb1 \
-\cb3             \cf4 \strokec4 background:\cf0 \strokec5  \cf10 \strokec10 red\cf0 \strokec5 ;\cb1 \
-\cb3             \cf4 \strokec4 color:\cf0 \strokec5  \cf10 \strokec10 white\cf0 \strokec5 ;\cb1 \
-\cb3             \cf4 \strokec4 font-size:\cf0 \strokec5  \cf12 \strokec12 10px\cf0 \strokec5 ;\cb1 \
-\cb3             \cf4 \strokec4 width:\cf0 \strokec5  \cf12 \strokec12 16px\cf0 \strokec5 ;\cb1 \
-\cb3             \cf4 \strokec4 height:\cf0 \strokec5  \cf12 \strokec12 16px\cf0 \strokec5 ;\cb1 \
-\cb3             \cf4 \strokec4 border-radius:\cf0 \strokec5  \cf12 \strokec12 50%\cf0 \strokec5 ;\cb1 \
-\cb3             \cf4 \strokec4 display:\cf0 \strokec5  \cf10 \strokec10 flex\cf0 \strokec5 ;\cb1 \
-\cb3             \cf4 \strokec4 align-items:\cf0 \strokec5  \cf10 \strokec10 center\cf0 \strokec5 ;\cb1 \
-\cb3             \cf4 \strokec4 justify-content:\cf0 \strokec5  \cf10 \strokec10 center\cf0 \strokec5 ;\cb1 \
-\cb3             \cf4 \strokec4 border:\cf0 \strokec5  \cf12 \strokec12 2px\cf0 \strokec5  \cf10 \strokec10 solid\cf0 \strokec5  \cf10 \strokec10 white\cf0 \strokec5 ;\cb1 \
-\cb3         \}\cb1 \
-\cb3     \cf6 \strokec6 </\cf7 \strokec7 style\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
-\pard\pardeftab720\partightenfactor0
-\cf6 \cb3 \strokec6 </\cf7 \strokec7 head\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
-\cf6 \cb3 \strokec6 <\cf7 \strokec7 body\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "flex flex-col md:flex-row items-start md:items-center justify-center gap-8 p-4"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
-\
-\pard\pardeftab720\partightenfactor0
-\cf0 \cb3     \cf13 \strokec13 <!-- Controls -->\cf0 \cb1 \strokec5 \
-\cb3     \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "w-full max-w-xs hidden md:block space-y-6 self-center"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
-\cb3         \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "bg-white p-6 rounded-2xl shadow-sm border border-gray-200"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "flex items-center gap-2 mb-2"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf7 \strokec7 i\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "fa-solid fa-leaf text-green-600 text-xl"\cf6 \strokec6 ></\cf7 \strokec7 i\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf7 \strokec7 h1\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-2xl font-bold text-gray-800"\cf6 \strokec6 >\cf0 \strokec5 iQAgri Simulator\cf6 \strokec6 </\cf7 \strokec7 h1\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 <\cf7 \strokec7 p\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-sm text-gray-500 mb-6"\cf6 \strokec6 >\cf0 \strokec5 Experience the Super App ecosystem.\cf6 \strokec6 </\cf7 \strokec7 p\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
-\cb3             \cb1 \
-\cb3             \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "flex items-center justify-between mb-4"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf7 \strokec7 span\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-sm font-semibold text-gray-700"\cf6 \strokec6 >\cf0 \strokec5 Strategy Mode\cf6 \strokec6 </\cf7 \strokec7 span\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf7 \strokec7 label\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "relative inline-flex items-center cursor-pointer"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf7 \strokec7 input\cf0 \strokec5  \cf4 \strokec4 type\cf6 \strokec6 =\cf8 \strokec8 "checkbox"\cf0 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf8 \strokec8 "strategy-toggle"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "sr-only peer"\cf0 \strokec5  \cf4 \strokec4 onchange\cf6 \strokec6 =\cf8 \strokec8 "toggleStrategy()"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-green-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-yellow-500"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 </\cf7 \strokec7 label\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
-\cb3         \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
-\
-\cb3         \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "bg-white p-6 rounded-2xl shadow-sm border border-gray-200"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 <\cf7 \strokec7 h3\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "font-bold text-gray-800 mb-3"\cf6 \strokec6 >\cf0 \strokec5 Navigation Guide\cf6 \strokec6 </\cf7 \strokec7 h3\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 <\cf7 \strokec7 ul\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "space-y-3 text-sm text-gray-600"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf7 \strokec7 li\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "flex items-center gap-2"\cf6 \strokec6 ><\cf7 \strokec7 i\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "fa-solid fa-house text-green-600"\cf6 \strokec6 ></\cf7 \strokec7 i\cf6 \strokec6 >\cf0 \strokec5  \cf6 \strokec6 <\cf7 \strokec7 strong\cf6 \strokec6 >\cf0 \strokec5 Home:\cf6 \strokec6 </\cf7 \strokec7 strong\cf6 \strokec6 >\cf0 \strokec5  See updated branding.\cf6 \strokec6 </\cf7 \strokec7 li\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf7 \strokec7 li\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "flex items-center gap-2"\cf6 \strokec6 ><\cf7 \strokec7 i\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "fa-solid fa-shop text-green-600"\cf6 \strokec6 ></\cf7 \strokec7 i\cf6 \strokec6 >\cf0 \strokec5  \cf6 \strokec6 <\cf7 \strokec7 strong\cf6 \strokec6 >\cf0 \strokec5 Shop:\cf6 \strokec6 </\cf7 \strokec7 strong\cf6 \strokec6 >\cf0 \strokec5  iQAgri Market.\cf6 \strokec6 </\cf7 \strokec7 li\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf7 \strokec7 li\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "flex items-center gap-2"\cf6 \strokec6 ><\cf7 \strokec7 i\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "fa-solid fa-hand-holding-dollar text-orange-600"\cf6 \strokec6 ></\cf7 \strokec7 i\cf6 \strokec6 >\cf0 \strokec5  \cf6 \strokec6 <\cf7 \strokec7 strong\cf6 \strokec6 >\cf0 \strokec5 Mandi:\cf6 \strokec6 </\cf7 \strokec7 strong\cf6 \strokec6 >\cf0 \strokec5  iQAgri Mandi.\cf6 \strokec6 </\cf7 \strokec7 li\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf7 \strokec7 li\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "flex items-center gap-2"\cf6 \strokec6 ><\cf7 \strokec7 i\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "fa-solid fa-qrcode text-cyan-600"\cf6 \strokec6 ></\cf7 \strokec7 i\cf6 \strokec6 >\cf0 \strokec5  \cf6 \strokec6 <\cf7 \strokec7 strong\cf6 \strokec6 >\cf0 \strokec5 Pay:\cf6 \strokec6 </\cf7 \strokec7 strong\cf6 \strokec6 >\cf0 \strokec5  iQAgri Pay.\cf6 \strokec6 </\cf7 \strokec7 li\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 </\cf7 \strokec7 ul\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
-\cb3         \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
-\cb3     \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
-\
-\cb3     \cf13 \strokec13 <!-- Phone Simulator -->\cf0 \cb1 \strokec5 \
-\cb3     \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "phone-frame relative"\cf0 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf8 \strokec8 "app-container"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
-\cb3         \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "notch"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
-\cb3         \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "h-8 bg-green-700 w-full flex justify-between items-center px-6 text-[10px] text-white font-medium z-40 mt-4"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 <\cf7 \strokec7 span\cf6 \strokec6 >\cf0 \strokec5 10:05 AM\cf6 \strokec6 </\cf7 \strokec7 span\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "flex gap-1"\cf6 \strokec6 ><\cf7 \strokec7 i\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "fa-solid fa-signal"\cf6 \strokec6 ></\cf7 \strokec7 i\cf6 \strokec6 ><\cf7 \strokec7 i\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "fa-solid fa-wifi"\cf6 \strokec6 ></\cf7 \strokec7 i\cf6 \strokec6 ><\cf7 \strokec7 i\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "fa-solid fa-battery-full"\cf6 \strokec6 ></\cf7 \strokec7 i\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
-\cb3         \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
-\
-\cb3         \cf13 \strokec13 <!-- DYNAMIC SCREEN -->\cf0 \cb1 \strokec5 \
-\cb3         \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf8 \strokec8 "screen-content"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "flex-1 overflow-y-auto no-scrollbar bg-gray-50 relative pb-20"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
-\
-\cb3         \cf13 \strokec13 <!-- BOTTOM NAV -->\cf0 \cb1 \strokec5 \
-\cb3         \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "bg-white border-t border-gray-200 h-16 flex justify-around items-center px-2 z-40 absolute bottom-0 w-full shadow-[0_-5px_10px_rgba(0,0,0,0.02)]"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 <\cf7 \strokec7 button\cf0 \strokec5  \cf4 \strokec4 onclick\cf6 \strokec6 =\cf8 \strokec8 "loadScreen('home')"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "flex flex-col items-center gap-1 p-2 w-1/5 text-gray-400 hover:text-green-600 transition"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf7 \strokec7 i\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "fa-solid fa-house text-lg"\cf6 \strokec6 ></\cf7 \strokec7 i\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf7 \strokec7 span\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-[10px] font-medium"\cf6 \strokec6 >\cf0 \strokec5 Home\cf6 \strokec6 </\cf7 \strokec7 span\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 </\cf7 \strokec7 button\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
-\cb3             \cb1 \
-\cb3             \cf6 \strokec6 <\cf7 \strokec7 button\cf0 \strokec5  \cf4 \strokec4 onclick\cf6 \strokec6 =\cf8 \strokec8 "loadScreen('shop')"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "flex flex-col items-center gap-1 p-2 w-1/5 text-gray-400 hover:text-green-600 transition monetizable"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "strategy-badge -top-8 left-0"\cf6 \strokec6 >\cf0 \strokec5 Commerce\cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf7 \strokec7 i\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "fa-solid fa-cart-flatbed text-lg"\cf6 \strokec6 ></\cf7 \strokec7 i\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf7 \strokec7 span\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-[10px] font-medium"\cf6 \strokec6 >\cf0 \strokec5 Shop\cf6 \strokec6 </\cf7 \strokec7 span\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 </\cf7 \strokec7 button\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
-\
-\cb3             \cf13 \strokec13 <!-- CENTRAL PAY BUTTON -->\cf0 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "relative -top-6"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf7 \strokec7 button\cf0 \strokec5  \cf4 \strokec4 onclick\cf6 \strokec6 =\cf8 \strokec8 "loadScreen('wallet')"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "w-16 h-16 bg-gradient-to-tr from-cyan-600 to-blue-600 rounded-full flex flex-col items-center justify-center text-white shadow-lg border-4 border-white monetizable transition active:scale-95 hover:shadow-cyan-200"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "strategy-badge -top-3 -right-6 w-24"\cf6 \strokec6 >\cf0 \strokec5 iQAgri Pay\cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf7 \strokec7 i\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "fa-solid fa-qrcode text-2xl mb-0.5"\cf6 \strokec6 ></\cf7 \strokec7 i\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf7 \strokec7 span\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-[8px] font-bold uppercase"\cf6 \strokec6 >\cf0 \strokec5 Pay\cf6 \strokec6 </\cf7 \strokec7 span\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 </\cf7 \strokec7 button\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
-\
-\cb3             \cf6 \strokec6 <\cf7 \strokec7 button\cf0 \strokec5  \cf4 \strokec4 onclick\cf6 \strokec6 =\cf8 \strokec8 "loadScreen('mandi')"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "flex flex-col items-center gap-1 p-2 w-1/5 text-gray-400 hover:text-green-600 transition monetizable"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
-\cb3                  \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "strategy-badge -top-8 right-0"\cf6 \strokec6 >\cf0 \strokec5 Commission\cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf7 \strokec7 i\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "fa-solid fa-hand-holding-dollar text-lg"\cf6 \strokec6 ></\cf7 \strokec7 i\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf7 \strokec7 span\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-[10px] font-medium"\cf6 \strokec6 >\cf0 \strokec5 Mandi\cf6 \strokec6 </\cf7 \strokec7 span\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 </\cf7 \strokec7 button\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
-\cb3             \cb1 \
-\cb3             \cf6 \strokec6 <\cf7 \strokec7 button\cf0 \strokec5  \cf4 \strokec4 onclick\cf6 \strokec6 =\cf8 \strokec8 "loadScreen('map')"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "flex flex-col items-center gap-1 p-2 w-1/5 text-gray-400 hover:text-purple-600 transition premium-feature"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
-\cb3                  \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "strategy-badge -top-8 right-0 premium-badge"\cf6 \strokec6 >\cf0 \strokec5 Pro\cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf7 \strokec7 i\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "fa-solid fa-satellite text-lg"\cf6 \strokec6 ></\cf7 \strokec7 i\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf7 \strokec7 span\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-[10px] font-medium"\cf6 \strokec6 >\cf0 \strokec5 Farm\cf6 \strokec6 </\cf7 \strokec7 span\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 </\cf7 \strokec7 button\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
-\cb3         \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
-\cb3     \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
-\
-\cb3     \cf13 \strokec13 <!-- Mobile Toggle -->\cf0 \cb1 \strokec5 \
-\cb3     \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "fixed bottom-4 right-4 md:hidden z-50"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
-\cb3         \cf6 \strokec6 <\cf7 \strokec7 button\cf0 \strokec5  \cf4 \strokec4 onclick\cf6 \strokec6 =\cf8 \strokec8 "document.getElementById('strategy-toggle').click()"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "bg-yellow-500 text-white w-12 h-12 rounded-full shadow-lg flex items-center justify-center"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 <\cf7 \strokec7 i\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "fa-solid fa-lightbulb text-xl"\cf6 \strokec6 ></\cf7 \strokec7 i\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
-\cb3         \cf6 \strokec6 </\cf7 \strokec7 button\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
-\cb3     \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
-\
-\cb3     \cf6 \strokec6 <\cf7 \strokec7 script\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
-\cb3         \cf9 \strokec9 let\cf0 \strokec5  isStrategyMode = \cf9 \strokec9 false\cf0 \strokec5 ;\cb1 \
-\cb3         \cf9 \strokec9 let\cf0 \strokec5  isPro = \cf9 \strokec9 false\cf0 \strokec5 ;\cb1 \
-\
-\cb3         \cf9 \strokec9 function\cf0 \strokec5  toggleStrategy() \{\cb1 \
-\cb3             isStrategyMode = !isStrategyMode;\cb1 \
-\cb3             \cf9 \strokec9 const\cf0 \strokec5  container = document.getElementById(\cf11 \strokec11 'app-container'\cf0 \strokec5 );\cb1 \
-\cb3             isStrategyMode ? container.classList.add(\cf11 \strokec11 'show-strategy'\cf0 \strokec5 ) : container.classList.remove(\cf11 \strokec11 'show-strategy'\cf0 \strokec5 );\cb1 \
-\cb3         \}\cb1 \
-\
-\cb3         \cf9 \strokec9 const\cf0 \strokec5  screens = \{\cb1 \
-\cb3             home: () => \cf11 \strokec11 `\cf0 \cb1 \strokec5 \
-\pard\pardeftab720\partightenfactor0
-\cf11 \cb3 \strokec11                 <div class="bg-green-700 p-6 pb-12 rounded-b-[40px] text-white relative shadow-lg">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                     <!-- Branding Header -->\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                     <div class="flex justify-between items-center mb-6 border-b border-green-600 pb-4">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                         <div class="flex items-center gap-2">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                             <div class="w-8 h-8 bg-white text-green-700 rounded-lg flex items-center justify-center shadow-sm">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                                 <i class="fa-solid fa-leaf text-lg"></i>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                             </div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                             <span class="font-bold text-xl tracking-wide">iQAgri</span>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                         </div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                         <div class="flex gap-3">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                             <button onclick="loadScreen('chat')" class="w-9 h-9 bg-white/20 rounded-full flex items-center justify-center chat-bubble hover:bg-white/30 transition backdrop-blur-sm">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                                 <i class="fa-regular fa-comment-dots"></i>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                             </button>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                             <button class="w-9 h-9 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition backdrop-blur-sm">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                                 <i class="fa-regular fa-bell"></i>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                             </button>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                         </div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                     </div>\cf0 \cb1 \strokec5 \
-\
-\cf11 \cb3 \strokec11                     <!-- User Greeting -->\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                     <div class="flex items-center gap-3 mb-6">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                         <div class="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center border-2 border-white/30">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                             <i class="fa-solid fa-user text-xl"></i>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                         </div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                         <div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                             <p class="text-xs opacity-80">Namaste,</p>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                             <h2 class="text-lg font-bold">Ram Kishan</h2>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                         </div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                         \cf0 \strokec5 $\{isPro ? \cf11 \strokec11 '<span class="ml-auto bg-yellow-400 text-green-900 text-[10px] font-bold px-2 py-1 rounded shadow-sm">PRO</span>'\cf0 \strokec5  : \cf11 \strokec11 ''\cf0 \strokec5 \}\cb1 \
-\cf11 \cb3 \strokec11                     </div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                     \cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                     <!-- Weather Hook -->\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                     <div class="bg-white/10 backdrop-blur-md p-4 rounded-2xl border border-white/20 flex items-center justify-between mb-2 shadow-sm">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                         <div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                             <div class="text-3xl font-bold">28\'b0C</div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                             <div class="text-xs opacity-90">Gangedi, MP \'95 Sunny</div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                         </div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                         <i class="fa-solid fa-cloud-sun text-4xl text-yellow-300"></i>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                     </div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                 </div>\cf0 \cb1 \strokec5 \
-\
-\cf11 \cb3 \strokec11                 <!-- Quick Actions Grid -->\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                 <div class="px-4 -mt-8 relative z-10">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                     <div class="bg-white rounded-2xl p-4 shadow-md grid grid-cols-4 gap-4">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                         <div onclick="loadScreen('wallet')" class="flex flex-col items-center gap-1 cursor-pointer hover:scale-105 transition">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                             <div class="w-10 h-10 bg-cyan-50 text-cyan-600 rounded-full flex items-center justify-center"><i class="fa-solid fa-qrcode"></i></div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                             <span class="text-[10px] font-medium text-gray-600">Scan</span>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                         </div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                         <div onclick="loadScreen('mandi')" class="flex flex-col items-center gap-1 cursor-pointer hover:scale-105 transition">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                             <div class="w-10 h-10 bg-orange-50 text-orange-600 rounded-full flex items-center justify-center"><i class="fa-solid fa-wheat-awn"></i></div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                             <span class="text-[10px] font-medium text-gray-600">Sell</span>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                         </div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                         <div onclick="loadScreen('shop')" class="flex flex-col items-center gap-1 cursor-pointer hover:scale-105 transition">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                             <div class="w-10 h-10 bg-green-50 text-green-600 rounded-full flex items-center justify-center"><i class="fa-solid fa-cart-flatbed"></i></div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                             <span class="text-[10px] font-medium text-gray-600">Buy</span>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                         </div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                         <div class="flex flex-col items-center gap-1 cursor-pointer hover:scale-105 transition">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                             <div class="w-10 h-10 bg-purple-50 text-purple-600 rounded-full flex items-center justify-center"><i class="fa-solid fa-tractor"></i></div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                             <span class="text-[10px] font-medium text-gray-600">Rent</span>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                         </div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                     </div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                 </div>\cf0 \cb1 \strokec5 \
-\
-\cf11 \cb3 \strokec11                 <!-- Market Trends -->\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                 <div class="px-4 mt-6">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                     <div class="flex justify-between items-end mb-3">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                         <h3 class="font-bold text-gray-800">Mandi Rates (Live)</h3>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                         <span class="text-[10px] text-green-600 font-bold">View All</span>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                     </div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                     <div class="space-y-3">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                         <div class="bg-white p-3 rounded-xl border border-gray-100 flex justify-between items-center shadow-sm">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                             <div class="flex items-center gap-3">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                                 <div class="w-10 h-10 rounded-lg bg-orange-100 flex items-center justify-center text-orange-600"><i class="fa-solid fa-wheat-awn-circle-exclamation"></i></div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                                 <div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                                     <div class="text-xs font-bold text-gray-800">Sharbati Wheat</div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                                     <div class="text-[10px] text-gray-500">Indore Mandi</div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                                 </div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                             </div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                             <div class="text-right">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                                 <div class="text-sm font-bold text-green-600">
-\f1 \uc0\u8377 
-\f0 2,450/Q</div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                                 <div class="text-[10px] text-green-500"><i class="fa-solid fa-arrow-trend-up"></i> +
-\f1 \uc0\u8377 
-\f0 20</div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                             </div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                         </div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                     </div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                 </div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11             `\cf0 \strokec5 ,\cb1 \
-\
-\pard\pardeftab720\partightenfactor0
-\cf0 \cb3             shop: () => \cf11 \strokec11 `\cf0 \cb1 \strokec5 \
-\pard\pardeftab720\partightenfactor0
-\cf11 \cb3 \strokec11                 <!-- Shop Header -->\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                 <div class="bg-white p-4 pt-6 sticky top-0 z-20 border-b border-gray-100 flex justify-between items-center shadow-sm">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                     <div class="flex items-center gap-2">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                         <i class="fa-solid fa-leaf text-green-600"></i>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                         <h2 class="text-xl font-bold text-gray-800">iQAgri Market</h2>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                     </div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                     <button class="relative p-2 bg-gray-50 rounded-full hover:bg-gray-100">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                         <i class="fa-solid fa-truck-fast text-gray-600"></i>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                         <span class="absolute top-0 right-0 w-2.5 h-2.5 bg-red-500 rounded-full border-2 border-white"></span>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                     </button>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                 </div>\cf0 \cb1 \strokec5 \
-\
-\cf11 \cb3 \strokec11                 <!-- Categories -->\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                 <div class="p-4">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                     <div class="flex gap-2 overflow-x-auto no-scrollbar mb-6">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                         <button class="px-4 py-2 bg-green-600 text-white text-xs font-bold rounded-full shadow-lg shadow-green-200">All</button>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                         <button class="px-4 py-2 bg-white border border-gray-200 text-gray-600 text-xs font-bold rounded-full">Seeds</button>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                         <button class="px-4 py-2 bg-white border border-gray-200 text-gray-600 text-xs font-bold rounded-full">Fertilizers</button>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                         <button class="px-4 py-2 bg-white border border-gray-200 text-gray-600 text-xs font-bold rounded-full">Equipment</button>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                     </div>\cf0 \cb1 \strokec5 \
-\
-\cf11 \cb3 \strokec11                     <!-- Equipment Section -->\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                     <div class="mb-6 monetizable">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                          <div class="strategy-badge -top-2 right-0">High Ticket Sales</div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                         <div class="flex justify-between items-end mb-3">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                             <h3 class="font-bold text-gray-800">Farm Equipment</h3>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                         </div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                         <div class="flex gap-4 overflow-x-auto no-scrollbar pb-2">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                             <!-- Tractor Card -->\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                             <div class="min-w-[160px] bg-white p-3 rounded-xl border border-gray-100 shadow-sm">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                                 <div class="h-24 bg-gray-100 rounded-lg mb-2 flex items-center justify-center text-gray-300"><i class="fa-solid fa-tractor text-4xl"></i></div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                                 <div class="text-xs font-bold text-gray-800">Mahindra 575 DI</div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                                 <div class="text-[10px] text-gray-500 mb-2">45 HP \'95 Diesel</div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                                 <div class="flex justify-between items-center">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                                     <span class="text-xs font-bold text-green-600">
-\f1 \uc0\u8377 
-\f0 6.8L</span>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                                     <button class="w-6 h-6 bg-green-100 text-green-600 rounded flex items-center justify-center text-[10px]"><i class="fa-solid fa-plus"></i></button>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                                 </div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                             </div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                             <!-- Drone Card -->\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                             <div class="min-w-[160px] bg-white p-3 rounded-xl border border-gray-100 shadow-sm">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                                 <div class="h-24 bg-gray-100 rounded-lg mb-2 flex items-center justify-center text-gray-300"><i class="fa-solid fa-plane-up text-4xl"></i></div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                                 <div class="text-xs font-bold text-gray-800">Agri Spray Drone</div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                                 <div class="text-[10px] text-gray-500 mb-2">10L Tank \'95 GPS</div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                                 <div class="flex justify-between items-center">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                                     <span class="text-xs font-bold text-green-600">
-\f1 \uc0\u8377 
-\f0 4.5L</span>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                                     <button class="w-6 h-6 bg-green-100 text-green-600 rounded flex items-center justify-center text-[10px]"><i class="fa-solid fa-plus"></i></button>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                                 </div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                             </div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                         </div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                     </div>\cf0 \cb1 \strokec5 \
-\
-\cf11 \cb3 \strokec11                     <!-- Tracking Widget -->\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                     <div class="bg-blue-50 p-4 rounded-xl border border-blue-100 flex gap-3 items-center">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                         <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-600"><i class="fa-solid fa-box-open"></i></div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                         <div class="flex-1">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                             <div class="text-xs font-bold text-gray-800">Order #IQ-9928</div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                             <div class="text-[10px] text-gray-500">Urea Fertilizer (5 Bags) \'95 Arriving Today</div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                             <div class="w-full h-1 bg-blue-200 rounded-full mt-2 overflow-hidden">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                                 <div class="w-3/4 h-full bg-blue-500"></div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                             </div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                         </div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                     </div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                 </div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11             `\cf0 \strokec5 ,\cb1 \
-\
-\pard\pardeftab720\partightenfactor0
-\cf0 \cb3             mandi: () => \cf11 \strokec11 `\cf0 \cb1 \strokec5 \
-\pard\pardeftab720\partightenfactor0
-\cf11 \cb3 \strokec11                 <div class="bg-orange-50 min-h-full pb-24">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                     <div class="bg-white p-6 rounded-b-[30px] shadow-sm mb-6">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                         <div class="flex justify-between items-center mb-4">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                              <h2 class="text-xl font-bold text-gray-800 flex items-center gap-2">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                                 <i class="fa-solid fa-leaf text-orange-600"></i> iQAgri Mandi\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                              </h2>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                              <span class="text-[10px] bg-orange-100 text-orange-600 px-2 py-1 rounded-full font-bold">Live Rates</span>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                         </div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                         \cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                         <p class="text-xs text-gray-500 mb-4">List your produce for verified agents.</p>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                         \cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                         <div class="bg-gray-50 p-1 rounded-lg flex text-xs font-bold text-gray-500 mb-4">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                             <button class="flex-1 py-2 bg-white shadow-sm rounded text-orange-600">My Listings</button>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                             <button class="flex-1 py-2">Sold History</button>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                         </div>\cf0 \cb1 \strokec5 \
-\
-\cf11 \cb3 \strokec11                         <button class="w-full py-3 bg-orange-600 text-white font-bold rounded-xl shadow-lg shadow-orange-200 flex items-center justify-center gap-2 hover:bg-orange-700 transition">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                             <i class="fa-solid fa-plus"></i> Create New Listing\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                         </button>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                     </div>\cf0 \cb1 \strokec5 \
-\
-\cf11 \cb3 \strokec11                     <div class="px-4">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                         <h3 class="font-bold text-gray-800 text-sm mb-3">Active Listings</h3>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                         \cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                         <!-- Listing Card -->\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                         <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 mb-3 monetizable">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                             <div class="strategy-badge -top-2 right-0">Commission: 2%</div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                             <div class="flex justify-between items-start mb-3">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                                 <div class="flex gap-3">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                                     <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center text-orange-600"><i class="fa-solid fa-wheat-awn text-xl"></i></div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                                     <div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                                         <div class="font-bold text-gray-800 text-sm">Premium Wheat</div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                                         <div class="text-[10px] text-gray-500">Harvested: 2 days ago</div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                                     </div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                                 </div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                                 <div class="text-right">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                                     <div class="text-xs font-bold text-gray-500">Asking Price</div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                                     <div class="text-sm font-bold text-green-600">
-\f1 \uc0\u8377 
-\f0 2,300/Q</div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                                 </div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                             </div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                             \cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                             <div class="flex justify-between text-xs text-gray-500 border-t border-gray-50 pt-3">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                                 <span><i class="fa-solid fa-weight-scale"></i> 50 Quintals</span>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                                 <span><i class="fa-solid fa-eye"></i> 12 Agents Viewed</span>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                             </div>\cf0 \cb1 \strokec5 \
-\
-\cf11 \cb3 \strokec11                             <div class="mt-3 flex gap-2">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                                 <button class="flex-1 py-2 border border-gray-200 rounded-lg text-xs font-bold text-gray-600">Edit</button>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                                 <button onclick="loadScreen('chat')" class="flex-1 py-2 bg-green-50 text-green-700 rounded-lg text-xs font-bold flex items-center justify-center gap-2 hover:bg-green-100 transition">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                                     <i class="fa-solid fa-comments"></i> 2 Bids\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                                 </button>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                             </div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                         </div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                     </div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                 </div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11             `\cf0 \strokec5 ,\cb1 \
-\
-\pard\pardeftab720\partightenfactor0
-\cf0 \cb3             wallet: () => \cf11 \strokec11 `\cf0 \cb1 \strokec5 \
-\pard\pardeftab720\partightenfactor0
-\cf11 \cb3 \strokec11                 <div class="bg-gradient-to-br from-cyan-600 to-blue-700 min-h-full text-white pb-24 slide-up">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                     <div class="p-6">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                         <!-- Header -->\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                         <div class="flex justify-between items-center mb-8">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                             <div class="flex items-center gap-2">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                                 <div class="w-8 h-8 bg-white/20 rounded flex items-center justify-center"><i class="fa-solid fa-leaf"></i></div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                                 <span class="font-bold text-lg tracking-wide">iQAgri Pay</span>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                             </div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                             <div class="bg-white/20 px-3 py-1 rounded-full text-xs flex items-center gap-2">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                                 <div class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div> UPI Active\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                             </div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                         </div>\cf0 \cb1 \strokec5 \
-\
-\cf11 \cb3 \strokec11                         <!-- QR Scanner Block -->\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                         <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-6 text-center border border-white/20 mb-8 shadow-xl">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                             <div class="w-20 h-20 mx-auto bg-white rounded-xl p-2 mb-4 shadow-inner">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                                 <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=iQAgri" class="w-full h-full opacity-80">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                             </div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                             <h2 class="font-bold text-xl mb-1">Scan & Pay</h2>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                             <p class="text-xs opacity-80">Pay at any Mandi or Shop</p>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                         </div>\cf0 \cb1 \strokec5 \
-\
-\cf11 \cb3 \strokec11                         <!-- Actions -->\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                         <div class="grid grid-cols-4 gap-4 text-center mb-8">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                             <div class="flex flex-col items-center gap-2 hover:opacity-80 transition cursor-pointer">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                                 <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center"><i class="fa-solid fa-mobile-screen"></i></div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                                 <span class="text-[10px]">To Mobile</span>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                             </div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                             <div class="flex flex-col items-center gap-2 hover:opacity-80 transition cursor-pointer">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                                 <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center"><i class="fa-solid fa-building-columns"></i></div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                                 <span class="text-[10px]">To Bank</span>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                             </div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                             <div class="flex flex-col items-center gap-2 hover:opacity-80 transition cursor-pointer">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                                 <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center"><i class="fa-solid fa-wallet"></i></div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                                 <span class="text-[10px]">Balance</span>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                             </div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                             <div class="flex flex-col items-center gap-2 hover:opacity-80 transition cursor-pointer">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                                 <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center"><i class="fa-solid fa-clock-rotate-left"></i></div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                                 <span class="text-[10px]">History</span>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                             </div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                         </div>\cf0 \cb1 \strokec5 \
-\
-\cf11 \cb3 \strokec11                         <!-- Recent Trans -->\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                         <div class="bg-white rounded-t-[30px] text-gray-800 p-6 min-h-[300px]">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                             <h3 class="font-bold text-sm mb-4">Recent Transactions</h3>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                             \cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                             <div class="flex justify-between items-center mb-4 border-b border-gray-50 pb-3">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                                 <div class="flex items-center gap-3">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                                     <div class="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center text-purple-600"><i class="fa-solid fa-satellite"></i></div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                                     <div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                                         <div class="font-bold text-sm">iQAgri Pro</div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                                         <div class="text-[10px] text-gray-400">Subscription</div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                                     </div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                                 </div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                                 <span class="font-bold text-sm">- 
-\f1 \uc0\u8377 
-\f0 49</span>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                             </div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                             \cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                             <div class="flex justify-between items-center mb-4 border-b border-gray-50 pb-3">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                                 <div class="flex items-center gap-3">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                                     <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center text-green-600"><i class="fa-solid fa-shop"></i></div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                                     <div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                                         <div class="font-bold text-sm">AgriHub Shop</div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                                         <div class="text-[10px] text-gray-400">Equipment Rent</div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                                     </div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                                 </div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                                 <span class="font-bold text-sm">- 
-\f1 \uc0\u8377 
-\f0 1,200</span>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                             </div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                         </div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                     </div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                 </div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11             `\cf0 \strokec5 ,\cb1 \
-\
-\pard\pardeftab720\partightenfactor0
-\cf0 \cb3             chat: () => \cf11 \strokec11 `\cf0 \cb1 \strokec5 \
-\pard\pardeftab720\partightenfactor0
-\cf11 \cb3 \strokec11                 <div class="bg-white min-h-full pb-24 flex flex-col slide-up">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                     <!-- Chat Header -->\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                     <div class="p-4 border-b border-gray-100 flex items-center gap-3 sticky top-0 bg-white z-10">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                         <button onclick="loadScreen('home')" class="w-8 h-8 hover:bg-gray-50 rounded-full flex items-center justify-center"><i class="fa-solid fa-arrow-left text-gray-600"></i></button>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                         <h2 class="font-bold text-gray-800">Messages</h2>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                     </div>\cf0 \cb1 \strokec5 \
-\
-\cf11 \cb3 \strokec11                     <!-- Chat List -->\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                     <div class="p-4 space-y-4">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                         <!-- Buyer Chat -->\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                         <div class="flex gap-3 cursor-pointer hover:bg-gray-50 p-2 rounded-xl transition">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                             <div class="relative">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                                 <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Agent" class="w-12 h-12 rounded-full bg-gray-100">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                                 <div class="absolute bottom-0 right-0 w-3 h-3 bg-green-500 border-2 border-white rounded-full"></div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                             </div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                             <div class="flex-1">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                                 <div class="flex justify-between mb-1">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                                     <h3 class="font-bold text-sm text-gray-800">Sharma Traders (Agent)</h3>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                                     <span class="text-[10px] text-green-600 font-bold">10:02 AM</span>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                                 </div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                                 <p class="text-xs text-gray-500 truncate font-medium">I can offer 
-\f1 \uc0\u8377 
-\f0 2350/Q for your Wheat lot. Interested?</p>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                             </div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                         </div>\cf0 \cb1 \strokec5 \
-\
-\cf11 \cb3 \strokec11                          <!-- Support Chat -->\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                         <div class="flex gap-3 cursor-pointer hover:bg-gray-50 p-2 rounded-xl transition">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                             <div class="relative">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                                 <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center text-green-600"><i class="fa-solid fa-headset"></i></div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                             </div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                             <div class="flex-1">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                                 <div class="flex justify-between mb-1">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                                     <h3 class="font-bold text-sm text-gray-800">iQAgri Support</h3>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                                     <span class="text-[10px] text-gray-400">Yesterday</span>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                                 </div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                                 <p class="text-xs text-gray-400 truncate">Your drone service ticket #882 has been resolved.</p>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                             </div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                         </div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                     </div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                     \cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                     <!-- Floating Action -->\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                      <button class="absolute bottom-24 right-4 w-14 h-14 bg-green-600 rounded-full text-white shadow-lg flex items-center justify-center hover:bg-green-700 transition">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                         <i class="fa-solid fa-pen-to-square"></i>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                     </button>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                 </div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11             `\cf0 \strokec5 ,\cb1 \
-\
-\pard\pardeftab720\partightenfactor0
-\cf0 \cb3             \cf13 \strokec13 // --- Reused Map from Previous (kept for Pro logic) ---\cf0 \cb1 \strokec5 \
-\cb3             map: () => \cf11 \strokec11 `\cf0 \cb1 \strokec5 \
-\pard\pardeftab720\partightenfactor0
-\cf11 \cb3 \strokec11                 <div class="h-full relative bg-gray-200">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                     <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://mt1.google.com/vt/lyrs=s&x=0&y=0&z=0'); background-color: #b5d0d0;">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                          <div class="w-full h-full opacity-20" style="background-image: linear-gradient(#000 1px, transparent 1px), linear-gradient(90deg, #000 1px, transparent 1px); background-size: 40px 40px;"></div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                     </div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                     <div class="absolute top-0 w-full bg-gradient-to-b from-black/50 to-transparent p-4 pt-8 text-white z-10 flex justify-between items-start">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                         <div><h2 class="text-lg font-bold">My Fields</h2><p class="text-xs opacity-80">Sentinel-2 Live Feed</p></div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                     </div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                     \cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                     \cf0 \strokec5 $\{isPro ? \cf11 \strokec11 `\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                         <div class="absolute top-1/3 left-1/4 w-40 h-40 border-2 border-green-400 bg-green-500/30 rounded-lg skew-x-6 rotate-12 flex items-center justify-center relative animate-[pulse_3s_infinite]">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                             <div class="bg-white/90 text-black text-[10px] font-bold px-2 py-1 rounded z-10 shadow border border-green-200">NDVI: 0.78</div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                         </div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                     `\cf0 \strokec5  : \cf11 \strokec11 `\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                         <div class="absolute top-1/3 left-1/4 w-40 h-40 border-2 border-white/50 bg-black/30 rounded-lg skew-x-6 rotate-12 flex items-center justify-center backdrop-blur-sm premium-feature">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                              <div class="strategy-badge -top-6 right-0 premium-badge">Paywall</div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                             <i class="fa-solid fa-lock text-3xl text-white/80"></i>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                         </div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                         <div class="absolute bottom-24 w-full px-4 slide-up">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                             <div class="bg-white rounded-2xl p-5 shadow-2xl premium-feature">\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                                 <h3 class="font-bold text-gray-800 mb-2">Unlock Satellite Data</h3>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                                 <button onclick="isPro=true; loadScreen('map')" class="w-full py-3 bg-purple-600 text-white font-bold rounded-xl shadow-lg">Subscribe @ 
-\f1 \uc0\u8377 
-\f0 49/mo</button>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                             </div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                         </div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11                     `\cf0 \strokec5 \}\cb1 \
-\cf11 \cb3 \strokec11                 </div>\cf0 \cb1 \strokec5 \
-\cf11 \cb3 \strokec11             `\cf0 \cb1 \strokec5 \
-\pard\pardeftab720\partightenfactor0
-\cf0 \cb3         \};\cb1 \
-\
-\cb3         \cf9 \strokec9 function\cf0 \strokec5  loadScreen(name) \{\cb1 \
-\cb3             document.getElementById(\cf11 \strokec11 'screen-content'\cf0 \strokec5 ).innerHTML = screens[name]();\cb1 \
-\cb3         \}\cb1 \
-\
-\cb3         \cf13 \strokec13 // Init\cf0 \cb1 \strokec5 \
-\cb3         loadScreen(\cf11 \strokec11 'home'\cf0 \strokec5 );\cb1 \
-\cb3     \cf6 \strokec6 </\cf7 \strokec7 script\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
-\pard\pardeftab720\partightenfactor0
-\cf6 \cb3 \strokec6 </\cf7 \strokec7 body\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
-\cf6 \cb3 \strokec6 </\cf7 \strokec7 html\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
-}
+        /* Phone Frame */
+        .phone-frame {
+            width: 375px;
+            height: 800px;
+            max-height: 85vh; 
+            background: #fff;
+            border-radius: 40px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            position: relative;
+            overflow: hidden;
+            border: 8px solid #1a1a1a;
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto; 
+        }
+
+        .notch {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 120px;
+            height: 25px;
+            background: #1a1a1a;
+            border-bottom-left-radius: 12px;
+            border-bottom-right-radius: 12px;
+            z-index: 50;
+        }
+
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+        .slide-up { animation: slideUp 0.3s ease-out forwards; }
+        @keyframes slideUp { from { transform: translateY(100%); } to { transform: translateY(0); } }
+        
+        .fade-in { animation: fadeIn 0.3s ease-out forwards; }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+        /* Strategy & UI Badges */
+        .strategy-badge {
+            position: absolute;
+            z-index: 40;
+            background: rgba(255, 215, 0, 0.95);
+            color: #744210;
+            font-weight: bold;
+            font-size: 10px;
+            padding: 2px 6px;
+            border-radius: 4px;
+            border: 1px solid #b7791f;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+            pointer-events: none;
+            display: none; 
+        }
+        .show-strategy .strategy-badge { display: block; }
+        .show-strategy .monetizable { border: 2px dashed #ecc94b; position: relative; }
+        .show-strategy .premium-feature { border: 2px dashed #a855f7; position: relative; }
+        .premium-badge { background: rgba(168, 85, 247, 0.95); color: white; border: 1px solid #7e22ce; }
+
+        /* Chat Bubble */
+        .chat-bubble { position: relative; }
+        .chat-bubble::after {
+            content: '2';
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            background: red;
+            color: white;
+            font-size: 10px;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid white;
+        }
+    </style>
+</head>
+<body class="flex flex-col md:flex-row items-start md:items-center justify-center gap-8 p-4">
+
+    <!-- Controls -->
+    <div class="w-full max-w-xs hidden md:block space-y-6 self-center">
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-200">
+            <div class="flex items-center gap-2 mb-2">
+                <i class="fa-solid fa-leaf text-green-600 text-xl"></i>
+                <h1 class="text-2xl font-bold text-gray-800">iQAgri Simulator</h1>
+            </div>
+            <p class="text-sm text-gray-500 mb-6">Experience the Super App ecosystem.</p>
+            
+            <div class="flex items-center justify-between mb-4">
+                <span class="text-sm font-semibold text-gray-700">Strategy Mode</span>
+                <label class="relative inline-flex items-center cursor-pointer">
+                    <input type="checkbox" id="strategy-toggle" class="sr-only peer" onchange="toggleStrategy()">
+                    <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-green-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-yellow-500"></div>
+                </label>
+            </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-200">
+            <h3 class="font-bold text-gray-800 mb-3">Navigation Guide</h3>
+            <ul class="space-y-3 text-sm text-gray-600">
+                <li class="flex items-center gap-2"><i class="fa-solid fa-house text-green-600"></i> <strong>Home:</strong> See updated branding.</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-shop text-green-600"></i> <strong>Shop:</strong> iQAgri Market.</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-hand-holding-dollar text-orange-600"></i> <strong>Mandi:</strong> iQAgri Mandi.</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-qrcode text-cyan-600"></i> <strong>Pay:</strong> iQAgri Pay.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Phone Simulator -->
+    <div class="phone-frame relative" id="app-container">
+        <div class="notch"></div>
+        <div class="h-8 bg-green-700 w-full flex justify-between items-center px-6 text-[10px] text-white font-medium z-40 mt-4">
+            <span>10:05 AM</span>
+            <div class="flex gap-1"><i class="fa-solid fa-signal"></i><i class="fa-solid fa-wifi"></i><i class="fa-solid fa-battery-full"></i></div>
+        </div>
+
+        <!-- DYNAMIC SCREEN -->
+        <div id="screen-content" class="flex-1 overflow-y-auto no-scrollbar bg-gray-50 relative pb-20"></div>
+
+        <!-- BOTTOM NAV -->
+        <div class="bg-white border-t border-gray-200 h-16 flex justify-around items-center px-2 z-40 absolute bottom-0 w-full shadow-[0_-5px_10px_rgba(0,0,0,0.02)]">
+            <button onclick="loadScreen('home')" class="flex flex-col items-center gap-1 p-2 w-1/5 text-gray-400 hover:text-green-600 transition">
+                <i class="fa-solid fa-house text-lg"></i>
+                <span class="text-[10px] font-medium">Home</span>
+            </button>
+            
+            <button onclick="loadScreen('shop')" class="flex flex-col items-center gap-1 p-2 w-1/5 text-gray-400 hover:text-green-600 transition monetizable">
+                <div class="strategy-badge -top-8 left-0">Commerce</div>
+                <i class="fa-solid fa-cart-flatbed text-lg"></i>
+                <span class="text-[10px] font-medium">Shop</span>
+            </button>
+
+            <!-- CENTRAL PAY BUTTON -->
+            <div class="relative -top-6">
+                <button onclick="loadScreen('wallet')" class="w-16 h-16 bg-gradient-to-tr from-cyan-600 to-blue-600 rounded-full flex flex-col items-center justify-center text-white shadow-lg border-4 border-white monetizable transition active:scale-95 hover:shadow-cyan-200">
+                    <div class="strategy-badge -top-3 -right-6 w-24">iQAgri Pay</div>
+                    <i class="fa-solid fa-qrcode text-2xl mb-0.5"></i>
+                    <span class="text-[8px] font-bold uppercase">Pay</span>
+                </button>
+            </div>
+
+            <button onclick="loadScreen('mandi')" class="flex flex-col items-center gap-1 p-2 w-1/5 text-gray-400 hover:text-green-600 transition monetizable">
+                 <div class="strategy-badge -top-8 right-0">Commission</div>
+                <i class="fa-solid fa-hand-holding-dollar text-lg"></i>
+                <span class="text-[10px] font-medium">Mandi</span>
+            </button>
+            
+            <button onclick="loadScreen('map')" class="flex flex-col items-center gap-1 p-2 w-1/5 text-gray-400 hover:text-purple-600 transition premium-feature">
+                 <div class="strategy-badge -top-8 right-0 premium-badge">Pro</div>
+                <i class="fa-solid fa-satellite text-lg"></i>
+                <span class="text-[10px] font-medium">Farm</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Mobile Toggle -->
+    <div class="fixed bottom-4 right-4 md:hidden z-50">
+        <button onclick="document.getElementById('strategy-toggle').click()" class="bg-yellow-500 text-white w-12 h-12 rounded-full shadow-lg flex items-center justify-center">
+            <i class="fa-solid fa-lightbulb text-xl"></i>
+        </button>
+    </div>
+
+    <script>
+        let isStrategyMode = false;
+        let isPro = false;
+
+        function toggleStrategy() {
+            isStrategyMode = !isStrategyMode;
+            const container = document.getElementById('app-container');
+            isStrategyMode ? container.classList.add('show-strategy') : container.classList.remove('show-strategy');
+        }
+
+        const screens = {
+            home: () => `
+                <div class="bg-green-700 p-6 pb-12 rounded-b-[40px] text-white relative shadow-lg">
+                    <!-- Branding Header -->
+                    <div class="flex justify-between items-center mb-6 border-b border-green-600 pb-4">
+                        <div class="flex items-center gap-2">
+                            <div class="w-8 h-8 bg-white text-green-700 rounded-lg flex items-center justify-center shadow-sm">
+                                <i class="fa-solid fa-leaf text-lg"></i>
+                            </div>
+                            <span class="font-bold text-xl tracking-wide">iQAgri</span>
+                        </div>
+                        <div class="flex gap-3">
+                            <button onclick="loadScreen('chat')" class="w-9 h-9 bg-white/20 rounded-full flex items-center justify-center chat-bubble hover:bg-white/30 transition backdrop-blur-sm">
+                                <i class="fa-regular fa-comment-dots"></i>
+                            </button>
+                            <button class="w-9 h-9 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition backdrop-blur-sm">
+                                <i class="fa-regular fa-bell"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- User Greeting -->
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center border-2 border-white/30">
+                            <i class="fa-solid fa-user text-xl"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs opacity-80">Namaste,</p>
+                            <h2 class="text-lg font-bold">Ram Kishan</h2>
+                        </div>
+                        ${isPro ? '<span class="ml-auto bg-yellow-400 text-green-900 text-[10px] font-bold px-2 py-1 rounded shadow-sm">PRO</span>' : ''}
+                    </div>
+                    
+                    <!-- Weather Hook -->
+                    <div class="bg-white/10 backdrop-blur-md p-4 rounded-2xl border border-white/20 flex items-center justify-between mb-2 shadow-sm">
+                        <div>
+                            <div class="text-3xl font-bold">28°C</div>
+                            <div class="text-xs opacity-90">Gangedi, MP • Sunny</div>
+                        </div>
+                        <i class="fa-solid fa-cloud-sun text-4xl text-yellow-300"></i>
+                    </div>
+                </div>
+
+                <!-- Quick Actions Grid -->
+                <div class="px-4 -mt-8 relative z-10">
+                    <div class="bg-white rounded-2xl p-4 shadow-md grid grid-cols-4 gap-4">
+                        <div onclick="loadScreen('wallet')" class="flex flex-col items-center gap-1 cursor-pointer hover:scale-105 transition">
+                            <div class="w-10 h-10 bg-cyan-50 text-cyan-600 rounded-full flex items-center justify-center"><i class="fa-solid fa-qrcode"></i></div>
+                            <span class="text-[10px] font-medium text-gray-600">Scan</span>
+                        </div>
+                        <div onclick="loadScreen('mandi')" class="flex flex-col items-center gap-1 cursor-pointer hover:scale-105 transition">
+                            <div class="w-10 h-10 bg-orange-50 text-orange-600 rounded-full flex items-center justify-center"><i class="fa-solid fa-wheat-awn"></i></div>
+                            <span class="text-[10px] font-medium text-gray-600">Sell</span>
+                        </div>
+                        <div onclick="loadScreen('shop')" class="flex flex-col items-center gap-1 cursor-pointer hover:scale-105 transition">
+                            <div class="w-10 h-10 bg-green-50 text-green-600 rounded-full flex items-center justify-center"><i class="fa-solid fa-cart-flatbed"></i></div>
+                            <span class="text-[10px] font-medium text-gray-600">Buy</span>
+                        </div>
+                        <div class="flex flex-col items-center gap-1 cursor-pointer hover:scale-105 transition">
+                            <div class="w-10 h-10 bg-purple-50 text-purple-600 rounded-full flex items-center justify-center"><i class="fa-solid fa-tractor"></i></div>
+                            <span class="text-[10px] font-medium text-gray-600">Rent</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Market Trends -->
+                <div class="px-4 mt-6">
+                    <div class="flex justify-between items-end mb-3">
+                        <h3 class="font-bold text-gray-800">Mandi Rates (Live)</h3>
+                        <span class="text-[10px] text-green-600 font-bold">View All</span>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="bg-white p-3 rounded-xl border border-gray-100 flex justify-between items-center shadow-sm">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-lg bg-orange-100 flex items-center justify-center text-orange-600"><i class="fa-solid fa-wheat-awn-circle-exclamation"></i></div>
+                                <div>
+                                    <div class="text-xs font-bold text-gray-800">Sharbati Wheat</div>
+                                    <div class="text-[10px] text-gray-500">Indore Mandi</div>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <div class="text-sm font-bold text-green-600">₹2,450/Q</div>
+                                <div class="text-[10px] text-green-500"><i class="fa-solid fa-arrow-trend-up"></i> +₹20</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `,
+
+            shop: () => `
+                <!-- Shop Header -->
+                <div class="bg-white p-4 pt-6 sticky top-0 z-20 border-b border-gray-100 flex justify-between items-center shadow-sm">
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-leaf text-green-600"></i>
+                        <h2 class="text-xl font-bold text-gray-800">iQAgri Market</h2>
+                    </div>
+                    <button class="relative p-2 bg-gray-50 rounded-full hover:bg-gray-100">
+                        <i class="fa-solid fa-truck-fast text-gray-600"></i>
+                        <span class="absolute top-0 right-0 w-2.5 h-2.5 bg-red-500 rounded-full border-2 border-white"></span>
+                    </button>
+                </div>
+
+                <!-- Categories -->
+                <div class="p-4">
+                    <div class="flex gap-2 overflow-x-auto no-scrollbar mb-6">
+                        <button class="px-4 py-2 bg-green-600 text-white text-xs font-bold rounded-full shadow-lg shadow-green-200">All</button>
+                        <button class="px-4 py-2 bg-white border border-gray-200 text-gray-600 text-xs font-bold rounded-full">Seeds</button>
+                        <button class="px-4 py-2 bg-white border border-gray-200 text-gray-600 text-xs font-bold rounded-full">Fertilizers</button>
+                        <button class="px-4 py-2 bg-white border border-gray-200 text-gray-600 text-xs font-bold rounded-full">Equipment</button>
+                    </div>
+
+                    <!-- Equipment Section -->
+                    <div class="mb-6 monetizable">
+                         <div class="strategy-badge -top-2 right-0">High Ticket Sales</div>
+                        <div class="flex justify-between items-end mb-3">
+                            <h3 class="font-bold text-gray-800">Farm Equipment</h3>
+                        </div>
+                        <div class="flex gap-4 overflow-x-auto no-scrollbar pb-2">
+                            <!-- Tractor Card -->
+                            <div class="min-w-[160px] bg-white p-3 rounded-xl border border-gray-100 shadow-sm">
+                                <div class="h-24 bg-gray-100 rounded-lg mb-2 flex items-center justify-center text-gray-300"><i class="fa-solid fa-tractor text-4xl"></i></div>
+                                <div class="text-xs font-bold text-gray-800">Mahindra 575 DI</div>
+                                <div class="text-[10px] text-gray-500 mb-2">45 HP • Diesel</div>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-xs font-bold text-green-600">₹6.8L</span>
+                                    <button class="w-6 h-6 bg-green-100 text-green-600 rounded flex items-center justify-center text-[10px]"><i class="fa-solid fa-plus"></i></button>
+                                </div>
+                            </div>
+                            <!-- Drone Card -->
+                            <div class="min-w-[160px] bg-white p-3 rounded-xl border border-gray-100 shadow-sm">
+                                <div class="h-24 bg-gray-100 rounded-lg mb-2 flex items-center justify-center text-gray-300"><i class="fa-solid fa-plane-up text-4xl"></i></div>
+                                <div class="text-xs font-bold text-gray-800">Agri Spray Drone</div>
+                                <div class="text-[10px] text-gray-500 mb-2">10L Tank • GPS</div>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-xs font-bold text-green-600">₹4.5L</span>
+                                    <button class="w-6 h-6 bg-green-100 text-green-600 rounded flex items-center justify-center text-[10px]"><i class="fa-solid fa-plus"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tracking Widget -->
+                    <div class="bg-blue-50 p-4 rounded-xl border border-blue-100 flex gap-3 items-center">
+                        <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-600"><i class="fa-solid fa-box-open"></i></div>
+                        <div class="flex-1">
+                            <div class="text-xs font-bold text-gray-800">Order #IQ-9928</div>
+                            <div class="text-[10px] text-gray-500">Urea Fertilizer (5 Bags) • Arriving Today</div>
+                            <div class="w-full h-1 bg-blue-200 rounded-full mt-2 overflow-hidden">
+                                <div class="w-3/4 h-full bg-blue-500"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `,
+
+            mandi: () => `
+                <div class="bg-orange-50 min-h-full pb-24">
+                    <div class="bg-white p-6 rounded-b-[30px] shadow-sm mb-6">
+                        <div class="flex justify-between items-center mb-4">
+                             <h2 class="text-xl font-bold text-gray-800 flex items-center gap-2">
+                                <i class="fa-solid fa-leaf text-orange-600"></i> iQAgri Mandi
+                             </h2>
+                             <span class="text-[10px] bg-orange-100 text-orange-600 px-2 py-1 rounded-full font-bold">Live Rates</span>
+                        </div>
+                        
+                        <p class="text-xs text-gray-500 mb-4">List your produce for verified agents.</p>
+                        
+                        <div class="bg-gray-50 p-1 rounded-lg flex text-xs font-bold text-gray-500 mb-4">
+                            <button class="flex-1 py-2 bg-white shadow-sm rounded text-orange-600">My Listings</button>
+                            <button class="flex-1 py-2">Sold History</button>
+                        </div>
+
+                        <button class="w-full py-3 bg-orange-600 text-white font-bold rounded-xl shadow-lg shadow-orange-200 flex items-center justify-center gap-2 hover:bg-orange-700 transition">
+                            <i class="fa-solid fa-plus"></i> Create New Listing
+                        </button>
+                    </div>
+
+                    <div class="px-4">
+                        <h3 class="font-bold text-gray-800 text-sm mb-3">Active Listings</h3>
+                        
+                        <!-- Listing Card -->
+                        <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 mb-3 monetizable">
+                            <div class="strategy-badge -top-2 right-0">Commission: 2%</div>
+                            <div class="flex justify-between items-start mb-3">
+                                <div class="flex gap-3">
+                                    <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center text-orange-600"><i class="fa-solid fa-wheat-awn text-xl"></i></div>
+                                    <div>
+                                        <div class="font-bold text-gray-800 text-sm">Premium Wheat</div>
+                                        <div class="text-[10px] text-gray-500">Harvested: 2 days ago</div>
+                                    </div>
+                                </div>
+                                <div class="text-right">
+                                    <div class="text-xs font-bold text-gray-500">Asking Price</div>
+                                    <div class="text-sm font-bold text-green-600">₹2,300/Q</div>
+                                </div>
+                            </div>
+                            
+                            <div class="flex justify-between text-xs text-gray-500 border-t border-gray-50 pt-3">
+                                <span><i class="fa-solid fa-weight-scale"></i> 50 Quintals</span>
+                                <span><i class="fa-solid fa-eye"></i> 12 Agents Viewed</span>
+                            </div>
+
+                            <div class="mt-3 flex gap-2">
+                                <button class="flex-1 py-2 border border-gray-200 rounded-lg text-xs font-bold text-gray-600">Edit</button>
+                                <button onclick="loadScreen('chat')" class="flex-1 py-2 bg-green-50 text-green-700 rounded-lg text-xs font-bold flex items-center justify-center gap-2 hover:bg-green-100 transition">
+                                    <i class="fa-solid fa-comments"></i> 2 Bids
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `,
+
+            wallet: () => `
+                <div class="bg-gradient-to-br from-cyan-600 to-blue-700 min-h-full text-white pb-24 slide-up">
+                    <div class="p-6">
+                        <!-- Header -->
+                        <div class="flex justify-between items-center mb-8">
+                            <div class="flex items-center gap-2">
+                                <div class="w-8 h-8 bg-white/20 rounded flex items-center justify-center"><i class="fa-solid fa-leaf"></i></div>
+                                <span class="font-bold text-lg tracking-wide">iQAgri Pay</span>
+                            </div>
+                            <div class="bg-white/20 px-3 py-1 rounded-full text-xs flex items-center gap-2">
+                                <div class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div> UPI Active
+                            </div>
+                        </div>
+
+                        <!-- QR Scanner Block -->
+                        <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-6 text-center border border-white/20 mb-8 shadow-xl">
+                            <div class="w-20 h-20 mx-auto bg-white rounded-xl p-2 mb-4 shadow-inner">
+                                <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=iQAgri" class="w-full h-full opacity-80">
+                            </div>
+                            <h2 class="font-bold text-xl mb-1">Scan & Pay</h2>
+                            <p class="text-xs opacity-80">Pay at any Mandi or Shop</p>
+                        </div>
+
+                        <!-- Actions -->
+                        <div class="grid grid-cols-4 gap-4 text-center mb-8">
+                            <div class="flex flex-col items-center gap-2 hover:opacity-80 transition cursor-pointer">
+                                <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center"><i class="fa-solid fa-mobile-screen"></i></div>
+                                <span class="text-[10px]">To Mobile</span>
+                            </div>
+                            <div class="flex flex-col items-center gap-2 hover:opacity-80 transition cursor-pointer">
+                                <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center"><i class="fa-solid fa-building-columns"></i></div>
+                                <span class="text-[10px]">To Bank</span>
+                            </div>
+                            <div class="flex flex-col items-center gap-2 hover:opacity-80 transition cursor-pointer">
+                                <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center"><i class="fa-solid fa-wallet"></i></div>
+                                <span class="text-[10px]">Balance</span>
+                            </div>
+                            <div class="flex flex-col items-center gap-2 hover:opacity-80 transition cursor-pointer">
+                                <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center"><i class="fa-solid fa-clock-rotate-left"></i></div>
+                                <span class="text-[10px]">History</span>
+                            </div>
+                        </div>
+
+                        <!-- Recent Trans -->
+                        <div class="bg-white rounded-t-[30px] text-gray-800 p-6 min-h-[300px]">
+                            <h3 class="font-bold text-sm mb-4">Recent Transactions</h3>
+                            
+                            <div class="flex justify-between items-center mb-4 border-b border-gray-50 pb-3">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center text-purple-600"><i class="fa-solid fa-satellite"></i></div>
+                                    <div>
+                                        <div class="font-bold text-sm">iQAgri Pro</div>
+                                        <div class="text-[10px] text-gray-400">Subscription</div>
+                                    </div>
+                                </div>
+                                <span class="font-bold text-sm">- ₹49</span>
+                            </div>
+                            
+                            <div class="flex justify-between items-center mb-4 border-b border-gray-50 pb-3">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center text-green-600"><i class="fa-solid fa-shop"></i></div>
+                                    <div>
+                                        <div class="font-bold text-sm">AgriHub Shop</div>
+                                        <div class="text-[10px] text-gray-400">Equipment Rent</div>
+                                    </div>
+                                </div>
+                                <span class="font-bold text-sm">- ₹1,200</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `,
+
+            chat: () => `
+                <div class="bg-white min-h-full pb-24 flex flex-col slide-up">
+                    <!-- Chat Header -->
+                    <div class="p-4 border-b border-gray-100 flex items-center gap-3 sticky top-0 bg-white z-10">
+                        <button onclick="loadScreen('home')" class="w-8 h-8 hover:bg-gray-50 rounded-full flex items-center justify-center"><i class="fa-solid fa-arrow-left text-gray-600"></i></button>
+                        <h2 class="font-bold text-gray-800">Messages</h2>
+                    </div>
+
+                    <!-- Chat List -->
+                    <div class="p-4 space-y-4">
+                        <!-- Buyer Chat -->
+                        <div class="flex gap-3 cursor-pointer hover:bg-gray-50 p-2 rounded-xl transition">
+                            <div class="relative">
+                                <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Agent" class="w-12 h-12 rounded-full bg-gray-100">
+                                <div class="absolute bottom-0 right-0 w-3 h-3 bg-green-500 border-2 border-white rounded-full"></div>
+                            </div>
+                            <div class="flex-1">
+                                <div class="flex justify-between mb-1">
+                                    <h3 class="font-bold text-sm text-gray-800">Sharma Traders (Agent)</h3>
+                                    <span class="text-[10px] text-green-600 font-bold">10:02 AM</span>
+                                </div>
+                                <p class="text-xs text-gray-500 truncate font-medium">I can offer ₹2350/Q for your Wheat lot. Interested?</p>
+                            </div>
+                        </div>
+
+                         <!-- Support Chat -->
+                        <div class="flex gap-3 cursor-pointer hover:bg-gray-50 p-2 rounded-xl transition">
+                            <div class="relative">
+                                <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center text-green-600"><i class="fa-solid fa-headset"></i></div>
+                            </div>
+                            <div class="flex-1">
+                                <div class="flex justify-between mb-1">
+                                    <h3 class="font-bold text-sm text-gray-800">iQAgri Support</h3>
+                                    <span class="text-[10px] text-gray-400">Yesterday</span>
+                                </div>
+                                <p class="text-xs text-gray-400 truncate">Your drone service ticket #882 has been resolved.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Floating Action -->
+                     <button class="absolute bottom-24 right-4 w-14 h-14 bg-green-600 rounded-full text-white shadow-lg flex items-center justify-center hover:bg-green-700 transition">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </button>
+                </div>
+            `,
+
+            // --- Reused Map from Previous (kept for Pro logic) ---
+            map: () => `
+                <div class="h-full relative bg-gray-200">
+                    <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://mt1.google.com/vt/lyrs=s&x=0&y=0&z=0'); background-color: #b5d0d0;">
+                         <div class="w-full h-full opacity-20" style="background-image: linear-gradient(#000 1px, transparent 1px), linear-gradient(90deg, #000 1px, transparent 1px); background-size: 40px 40px;"></div>
+                    </div>
+                    <div class="absolute top-0 w-full bg-gradient-to-b from-black/50 to-transparent p-4 pt-8 text-white z-10 flex justify-between items-start">
+                        <div><h2 class="text-lg font-bold">My Fields</h2><p class="text-xs opacity-80">Sentinel-2 Live Feed</p></div>
+                    </div>
+                    
+                    ${isPro ? `
+                        <div class="absolute top-1/3 left-1/4 w-40 h-40 border-2 border-green-400 bg-green-500/30 rounded-lg skew-x-6 rotate-12 flex items-center justify-center relative animate-[pulse_3s_infinite]">
+                            <div class="bg-white/90 text-black text-[10px] font-bold px-2 py-1 rounded z-10 shadow border border-green-200">NDVI: 0.78</div>
+                        </div>
+                    ` : `
+                        <div class="absolute top-1/3 left-1/4 w-40 h-40 border-2 border-white/50 bg-black/30 rounded-lg skew-x-6 rotate-12 flex items-center justify-center backdrop-blur-sm premium-feature">
+                             <div class="strategy-badge -top-6 right-0 premium-badge">Paywall</div>
+                            <i class="fa-solid fa-lock text-3xl text-white/80"></i>
+                        </div>
+                        <div class="absolute bottom-24 w-full px-4 slide-up">
+                            <div class="bg-white rounded-2xl p-5 shadow-2xl premium-feature">
+                                <h3 class="font-bold text-gray-800 mb-2">Unlock Satellite Data</h3>
+                                <button onclick="isPro=true; loadScreen('map')" class="w-full py-3 bg-purple-600 text-white font-bold rounded-xl shadow-lg">Subscribe @ ₹49/mo</button>
+                            </div>
+                        </div>
+                    `}
+                </div>
+            `
+        };
+
+        function loadScreen(name) {
+            document.getElementById('screen-content').innerHTML = screens[name]();
+        }
+
+        // Init
+        loadScreen('home');
+    </script>
+</body>
+</html>
+
+
+4.  **Paste the clean code:** Paste the copied code into the editor window in GitHub.
+
+5.  **Commit changes:** Scroll down and click the green "Commit changes" button.
+
+6.  **Wait:** Wait about 1 minute for GitHub to update the site.
+
+7.  **Visit your link:** Go to `https://amitiqnaax.github.io/iqagri-demo/` (or refresh it if it's already open). Your app should now work perfectly!
