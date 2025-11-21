@@ -182,8 +182,8 @@
                     <span><strong>Farm:</strong> Satellite Maps (Pro)</span>
                 </li>
                 <li class="flex items-center gap-3">
-                    <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center text-blue-600"><i class="fa-solid fa-magnifying-glass"></i></div>
-                    <span><strong>Search:</strong> Land Records (Govt)</span>
+                    <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center text-blue-600"><i class="fa-solid fa-building-columns"></i></div>
+                    <span><strong>Finance:</strong> Loans & Insurance</span>
                 </li>
                 <li class="flex items-center gap-3">
                     <div class="w-8 h-8 rounded-full bg-cyan-100 flex items-center justify-center text-cyan-600"><i class="fa-solid fa-qrcode"></i></div>
@@ -209,10 +209,10 @@
                 <span class="text-[10px] font-medium">Home</span>
             </button>
             
-            <button onclick="loadScreen('records')" class="flex flex-col items-center gap-1 p-2 w-1/5 text-gray-400 hover:text-blue-600 transition monetizable">
-                <div class="strategy-badge -top-8 left-0">Data Lock-in</div>
-                <i class="fa-solid fa-magnifying-glass text-xl"></i>
-                <span class="text-[10px] font-medium">Search</span>
+            <button onclick="loadScreen('shop')" class="flex flex-col items-center gap-1 p-2 w-1/5 text-gray-400 hover:text-green-600 transition monetizable">
+                <div class="strategy-badge -top-8 left-0">Commerce</div>
+                <i class="fa-solid fa-cart-flatbed text-xl"></i>
+                <span class="text-[10px] font-medium">Shop</span>
             </button>
 
             <div class="relative -top-6">
@@ -223,10 +223,10 @@
                 </button>
             </div>
 
-            <button onclick="loadScreen('shop')" class="flex flex-col items-center gap-1 p-2 w-1/5 text-gray-400 hover:text-green-600 transition monetizable">
-                 <div class="strategy-badge -top-8 right-0">Commerce</div>
-                <i class="fa-solid fa-cart-flatbed text-xl"></i>
-                <span class="text-[10px] font-medium">Shop</span>
+            <button onclick="loadScreen('loans')" class="flex flex-col items-center gap-1 p-2 w-1/5 text-gray-400 hover:text-blue-600 transition monetizable">
+                 <div class="strategy-badge -top-8 right-0">Fintech</div>
+                <i class="fa-solid fa-tractor text-xl"></i>
+                <span class="text-[10px] font-medium">Loans</span>
             </button>
             
             <button onclick="loadScreen('map')" class="flex flex-col items-center gap-1 p-2 w-1/5 text-gray-400 hover:text-purple-600 transition premium-feature">
@@ -299,17 +299,17 @@
                             <div class="w-12 h-12 bg-cyan-50 text-cyan-600 rounded-2xl flex items-center justify-center group-hover:bg-cyan-100 transition"><i class="fa-solid fa-qrcode text-xl"></i></div>
                             <span class="text-[10px] font-medium text-gray-600">Scan</span>
                         </div>
-                        <div onclick="loadScreen('mandi')" class="flex flex-col items-center gap-2 cursor-pointer hover:scale-105 transition group">
-                            <div class="w-12 h-12 bg-orange-50 text-orange-600 rounded-2xl flex items-center justify-center group-hover:bg-orange-100 transition"><i class="fa-solid fa-wheat-awn text-xl"></i></div>
-                            <span class="text-[10px] font-medium text-gray-600">Sell</span>
+                        <div onclick="loadScreen('records')" class="flex flex-col items-center gap-2 cursor-pointer hover:scale-105 transition group">
+                            <div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center group-hover:bg-blue-100 transition"><i class="fa-solid fa-magnifying-glass text-xl"></i></div>
+                            <span class="text-[10px] font-medium text-gray-600">Records</span>
                         </div>
                         <div onclick="loadScreen('shop')" class="flex flex-col items-center gap-2 cursor-pointer hover:scale-105 transition group">
                             <div class="w-12 h-12 bg-green-50 text-green-600 rounded-2xl flex items-center justify-center group-hover:bg-green-100 transition"><i class="fa-solid fa-cart-flatbed text-xl"></i></div>
                             <span class="text-[10px] font-medium text-gray-600">Buy</span>
                         </div>
-                        <div onclick="loadScreen('records')" class="flex flex-col items-center gap-2 cursor-pointer hover:scale-105 transition group">
-                            <div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center group-hover:bg-blue-100 transition"><i class="fa-solid fa-file-contract text-xl"></i></div>
-                            <span class="text-[10px] font-medium text-gray-600">Records</span>
+                        <div onclick="loadScreen('loans')" class="flex flex-col items-center gap-2 cursor-pointer hover:scale-105 transition group">
+                            <div class="w-12 h-12 bg-purple-50 text-purple-600 rounded-2xl flex items-center justify-center group-hover:bg-purple-100 transition"><i class="fa-solid fa-tractor text-xl"></i></div>
+                            <span class="text-[10px] font-medium text-gray-600">Loans</span>
                         </div>
                     </div>
                 </div>
@@ -359,7 +359,6 @@
                                 <select class="w-full p-3 bg-gray-50 border border-gray-200 rounded-xl text-sm font-medium text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
                                     <option>Madhya Pradesh</option>
                                     <option>Uttar Pradesh</option>
-                                    <option>Maharashtra</option>
                                 </select>
                             </div>
                             <div class="space-y-1">
@@ -367,54 +366,13 @@
                                 <select class="w-full p-3 bg-gray-50 border border-gray-200 rounded-xl text-sm font-medium text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
                                     <option>Indore</option>
                                     <option>Bhopal</option>
-                                    <option>Ujjain</option>
-                                </select>
-                            </div>
-                            <div class="space-y-1">
-                                <label class="text-xs font-bold text-gray-600 uppercase">Tehsil</label>
-                                <select class="w-full p-3 bg-gray-50 border border-gray-200 rounded-xl text-sm font-medium text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
-                                    <option>Hatod</option>
-                                    <option>Sanwer</option>
-                                </select>
-                            </div>
-                            <div class="space-y-1">
-                                <label class="text-xs font-bold text-gray-600 uppercase">Village</label>
-                                <select class="w-full p-3 bg-gray-50 border border-gray-200 rounded-xl text-sm font-medium text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
-                                    <option>Gangedi</option>
-                                    <option>Budhaniya</option>
                                 </select>
                             </div>
                         </div>
 
-                        <button onclick="showRecordResult()" class="w-full py-4 bg-blue-600 text-white font-bold rounded-xl shadow-lg hover:bg-blue-700 transition active:scale-95 flex items-center justify-center gap-2">
+                        <button onclick="alert('Simulated Record Fetch')" class="w-full py-4 bg-blue-600 text-white font-bold rounded-xl shadow-lg hover:bg-blue-700 transition active:scale-95 flex items-center justify-center gap-2">
                             <i class="fa-solid fa-magnifying-glass"></i> Search Records
                         </button>
-                    </div>
-                    
-                    <div id="record-result" class="hidden px-6 pb-6 slide-up">
-                        <div class="bg-white border border-gray-200 rounded-2xl shadow-lg overflow-hidden">
-                            <div class="bg-gray-100 p-3 border-b border-gray-200 flex justify-between items-center">
-                                <span class="text-xs font-bold text-gray-600">Khasra No. 42/1</span>
-                                <span class="bg-green-100 text-green-700 text-[10px] px-2 py-1 rounded-full font-bold">Verified</span>
-                            </div>
-                            <div class="p-4 space-y-2">
-                                <div class="flex justify-between text-sm">
-                                    <span class="text-gray-500">Owner:</span>
-                                    <span class="font-bold text-gray-800">Ram Kishan S/O Lalji</span>
-                                </div>
-                                <div class="flex justify-between text-sm">
-                                    <span class="text-gray-500">Area:</span>
-                                    <span class="font-bold text-gray-800">2.140 Hectare</span>
-                                </div>
-                                <div class="flex justify-between text-sm">
-                                    <span class="text-gray-500">Land Type:</span>
-                                    <span class="font-bold text-gray-800">Irrigated</span>
-                                </div>
-                            </div>
-                            <div class="p-3 bg-blue-50 text-center border-t border-blue-100">
-                                <button class="text-xs font-bold text-blue-600 flex items-center justify-center gap-1"><i class="fa-solid fa-download"></i> Download PDF</button>
-                            </div>
-                        </div>
                     </div>
                 </div>
             `,
@@ -436,7 +394,6 @@
                         <button class="px-5 py-2 bg-green-600 text-white text-xs font-bold rounded-full shadow-lg shadow-green-200 whitespace-nowrap">All</button>
                         <button class="px-5 py-2 bg-white border border-gray-200 text-gray-600 text-xs font-bold rounded-full whitespace-nowrap">Seeds</button>
                         <button class="px-5 py-2 bg-white border border-gray-200 text-gray-600 text-xs font-bold rounded-full whitespace-nowrap">Fertilizers</button>
-                        <button class="px-5 py-2 bg-white border border-gray-200 text-gray-600 text-xs font-bold rounded-full whitespace-nowrap">Equipment</button>
                     </div>
 
                     <div class="mb-6 monetizable">
@@ -457,82 +414,81 @@
                                     <button class="w-8 h-8 bg-green-600 text-white rounded-full flex items-center justify-center shadow-md hover:bg-green-700"><i class="fa-solid fa-plus"></i></button>
                                 </div>
                             </div>
-                            <div class="min-w-[200px] bg-white p-3 rounded-2xl border border-gray-100 shadow-md hover:shadow-lg transition cursor-pointer">
-                                <div class="h-32 bg-gray-50 rounded-xl mb-3 flex items-center justify-center text-gray-300"><i class="fa-solid fa-plane-up text-5xl"></i></div>
-                                <div class="text-sm font-bold text-gray-800">Agri Spray Drone</div>
-                                <div class="text-[10px] text-gray-500 mb-3">10L Tank • GPS • Auto-Pilot</div>
-                                <div class="flex justify-between items-center">
-                                    <span class="text-sm font-bold text-green-600">₹4.5L</span>
-                                    <button class="w-8 h-8 bg-green-600 text-white rounded-full flex items-center justify-center shadow-md hover:bg-green-700"><i class="fa-solid fa-plus"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="bg-blue-50 p-4 rounded-2xl border border-blue-100 flex gap-4 items-center shadow-sm cursor-pointer hover:bg-blue-100 transition">
-                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600"><i class="fa-solid fa-box-open text-xl"></i></div>
-                        <div class="flex-1">
-                            <div class="text-sm font-bold text-gray-800">Order #IQ-9928</div>
-                            <div class="text-[10px] text-gray-500">Urea Fertilizer (5 Bags) • Arriving Today</div>
-                            <div class="w-full h-1.5 bg-blue-200 rounded-full mt-2 overflow-hidden">
-                                <div class="w-3/4 h-full bg-blue-600 rounded-full"></div>
-                            </div>
                         </div>
                     </div>
                 </div>
             `,
 
-            mandi: () => `
-                <div class="bg-orange-50 min-h-full pb-24">
-                    <div class="bg-white p-6 rounded-b-[30px] shadow-sm mb-6">
-                        <div class="flex justify-between items-center mb-4">
-                             <h2 class="text-xl font-bold text-gray-800 flex items-center gap-2">
-                                <i class="fa-solid fa-leaf text-orange-600"></i> iQAgri Mandi
-                             </h2>
-                             <span class="text-[10px] bg-orange-100 text-orange-600 px-2 py-1 rounded-full font-bold flex items-center gap-1"><i class="fa-solid fa-circle fa-2xs animate-pulse"></i> Live</span>
+            loans: () => `
+                <div class="bg-white min-h-full pb-24 flex flex-col slide-up">
+                    <div class="p-4 border-b border-gray-100 flex items-center gap-3 sticky top-0 bg-white z-10 shadow-sm">
+                        <button onclick="loadScreen('home')" class="w-10 h-10 hover:bg-gray-50 rounded-full flex items-center justify-center transition"><i class="fa-solid fa-arrow-left text-gray-600"></i></button>
+                        <div>
+                            <h2 class="font-bold text-gray-800 text-lg">Financial Services</h2>
+                            <p class="text-[10px] text-gray-400">Loans & Insurance</p>
                         </div>
-                        
-                        <p class="text-xs text-gray-500 mb-4">List your produce for verified agents.</p>
-                        
-                        <div class="bg-gray-50 p-1 rounded-xl flex text-xs font-bold text-gray-500 mb-4">
-                            <button class="flex-1 py-2.5 bg-white shadow-sm rounded-lg text-orange-600">My Listings</button>
-                            <button class="flex-1 py-2.5">Sold History</button>
-                        </div>
-
-                        <button class="w-full py-3.5 bg-orange-600 text-white font-bold rounded-xl shadow-lg shadow-orange-200 flex items-center justify-center gap-2 hover:bg-orange-700 transition active:scale-95">
-                            <i class="fa-solid fa-plus"></i> Create New Listing
-                        </button>
                     </div>
 
-                    <div class="px-4">
-                        <h3 class="font-bold text-gray-800 text-sm mb-3">Active Listings</h3>
-                        
-                        <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 mb-3 monetizable cursor-pointer hover:shadow-md transition">
-                            <div class="strategy-badge -top-2 right-0">Commission: 2%</div>
-                            <div class="flex justify-between items-start mb-3">
-                                <div class="flex gap-3">
-                                    <div class="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center text-orange-600"><i class="fa-solid fa-wheat-awn text-xl"></i></div>
-                                    <div>
-                                        <div class="font-bold text-gray-800 text-sm">Premium Wheat</div>
-                                        <div class="text-[10px] text-gray-500">Harvested: 2 days ago</div>
-                                    </div>
+                    <div class="p-6 space-y-6">
+                        <!-- Active Loan Card -->
+                        <div class="bg-gradient-to-r from-blue-600 to-blue-500 rounded-2xl p-5 text-white shadow-lg relative overflow-hidden monetizable">
+                            <div class="strategy-badge top-2 right-2 text-black bg-yellow-400">Bank Comm: 1%</div>
+                            <div class="flex justify-between items-start mb-4">
+                                <div>
+                                    <p class="text-xs opacity-80 mb-1">Active KCC Loan</p>
+                                    <h3 class="text-2xl font-bold">₹2,50,000</h3>
                                 </div>
-                                <div class="text-right">
-                                    <div class="text-xs font-bold text-gray-500">Asking Price</div>
-                                    <div class="text-sm font-bold text-green-600">₹2,300/Q</div>
+                                <i class="fa-solid fa-building-columns text-2xl opacity-50"></i>
+                            </div>
+                            <div class="flex justify-between items-end">
+                                <div>
+                                    <p class="text-[10px] opacity-80">Next EMI: 15 Nov</p>
+                                    <p class="font-bold text-sm">₹12,400</p>
                                 </div>
+                                <button onclick="loadScreen('wallet')" class="bg-white text-blue-600 text-xs font-bold px-4 py-2 rounded-lg shadow hover:bg-gray-100">Pay EMI</button>
                             </div>
-                            
-                            <div class="flex justify-between text-xs text-gray-500 border-t border-gray-50 pt-3">
-                                <span class="flex items-center gap-1"><i class="fa-solid fa-weight-scale"></i> 50 Quintals</span>
-                                <span class="flex items-center gap-1"><i class="fa-solid fa-eye"></i> 12 Agents Viewed</span>
-                            </div>
+                        </div>
 
-                            <div class="mt-4 flex gap-3">
-                                <button class="flex-1 py-2 border border-gray-200 rounded-lg text-xs font-bold text-gray-600 hover:bg-gray-50">Edit</button>
-                                <button onclick="loadScreen('chat')" class="flex-1 py-2 bg-green-50 text-green-700 rounded-lg text-xs font-bold flex items-center justify-center gap-2 hover:bg-green-100 transition">
-                                    <i class="fa-solid fa-comments"></i> 2 Bids
-                                </button>
+                        <!-- Insurance Section -->
+                        <div>
+                            <div class="flex justify-between items-center mb-3">
+                                <h3 class="font-bold text-gray-800">Crop Insurance (PMFBY)</h3>
+                                <span class="text-[10px] text-blue-600 font-bold">View Policy</span>
+                            </div>
+                            <div class="bg-white border border-gray-200 rounded-2xl p-4 shadow-sm flex items-center gap-4 monetizable">
+                                <div class="strategy-badge -top-2 right-0">Comm: 5%</div>
+                                <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center text-green-600 text-xl"><i class="fa-solid fa-shield-halved"></i></div>
+                                <div class="flex-1">
+                                    <h4 class="text-sm font-bold text-gray-800">Wheat Crop Protection</h4>
+                                    <p class="text-[10px] text-gray-500">Coverage: ₹50,000/Acre</p>
+                                    <p class="text-[10px] text-green-600 font-bold mt-1">Premium: ₹450/Acre</p>
+                                </div>
+                                <button class="bg-green-600 text-white text-xs font-bold px-3 py-2 rounded-lg shadow">Get Insured</button>
+                            </div>
+                        </div>
+
+                        <!-- New Loan Offers -->
+                        <div>
+                            <h3 class="font-bold text-gray-800 mb-3">Pre-Approved Offers</h3>
+                            <div class="flex gap-3 overflow-x-auto no-scrollbar pb-2">
+                                <div class="min-w-[220px] bg-white border border-gray-200 rounded-xl p-4 shadow-sm">
+                                    <div class="flex items-center gap-2 mb-2">
+                                        <div class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center text-purple-600"><i class="fa-solid fa-tractor"></i></div>
+                                        <span class="text-xs font-bold text-gray-700">Tractor Loan</span>
+                                    </div>
+                                    <p class="text-lg font-bold text-gray-800 mb-1">Up to ₹8 Lakhs</p>
+                                    <p class="text-[10px] text-gray-500 mb-3">Interest: 9% p.a.</p>
+                                    <button class="w-full py-2 border border-purple-600 text-purple-600 text-xs font-bold rounded-lg hover:bg-purple-50">Apply Now</button>
+                                </div>
+                                <div class="min-w-[220px] bg-white border border-gray-200 rounded-xl p-4 shadow-sm">
+                                    <div class="flex items-center gap-2 mb-2">
+                                        <div class="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center text-orange-600"><i class="fa-solid fa-warehouse"></i></div>
+                                        <span class="text-xs font-bold text-gray-700">Warehouse Loan</span>
+                                    </div>
+                                    <p class="text-lg font-bold text-gray-800 mb-1">Up to ₹5 Lakhs</p>
+                                    <p class="text-[10px] text-gray-500 mb-3">Interest: 8.5% p.a.</p>
+                                    <button class="w-full py-2 border border-orange-600 text-orange-600 text-xs font-bold rounded-lg hover:bg-orange-50">Apply Now</button>
+                                </div>
                             </div>
                         </div>
                     </div>
