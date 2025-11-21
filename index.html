@@ -13,15 +13,32 @@
             font-family: 'Inter', sans-serif;
             background-color: #eef2f6;
             min-height: 100vh;
-            overflow-y: auto; 
+            display: flex;
+            flex-direction: row; /* Default to row for desktop */
+            align-items: center;
+            justify-content: center;
             padding: 20px;
+            gap: 40px;
+        }
+
+        /* Make it stack on mobile */
+        @media (max-width: 768px) {
+            body {
+                flex-direction: column;
+                align-items: center;
+            }
+            .controls-panel {
+                width: 100% !important;
+                max-width: 375px !important;
+                display: block !important; /* Force show on mobile if needed */
+            }
         }
 
         /* Phone Frame */
         .phone-frame {
             width: 375px;
             height: 800px;
-            max-height: 85vh; 
+            max-height: 85vh; /* Critical fix for viewport height */
             background: #fff;
             border-radius: 40px;
             box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
@@ -30,7 +47,7 @@
             border: 8px solid #1a1a1a;
             display: flex;
             flex-direction: column;
-            margin: 0 auto; 
+            flex-shrink: 0; /* Prevent squishing */
         }
 
         .notch {
@@ -95,10 +112,10 @@
         }
     </style>
 </head>
-<body class="flex flex-col md:flex-row items-start md:items-center justify-center gap-8 p-4">
+<body>
 
-    <!-- Controls -->
-    <div class="w-full max-w-xs hidden md:block space-y-6 self-center">
+    <!-- Controls (Left Panel) -->
+    <div class="controls-panel w-full max-w-xs space-y-6 self-center hidden md:block">
         <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-200">
             <div class="flex items-center gap-2 mb-2">
                 <i class="fa-solid fa-leaf text-green-600 text-xl"></i>
@@ -127,7 +144,7 @@
     </div>
 
     <!-- Phone Simulator -->
-    <div class="phone-frame relative" id="app-container">
+    <div class="phone-frame" id="app-container">
         <div class="notch"></div>
         <div class="h-8 bg-green-700 w-full flex justify-between items-center px-6 text-[10px] text-white font-medium z-40 mt-4">
             <span>10:05 AM</span>
@@ -173,7 +190,7 @@
         </div>
     </div>
 
-    <!-- Mobile Toggle -->
+    <!-- Mobile Toggle (for small screens) -->
     <div class="fixed bottom-4 right-4 md:hidden z-50">
         <button onclick="document.getElementById('strategy-toggle').click()" class="bg-yellow-500 text-white w-12 h-12 rounded-full shadow-lg flex items-center justify-center">
             <i class="fa-solid fa-lightbulb text-xl"></i>
@@ -562,12 +579,3 @@
     </script>
 </body>
 </html>
-
-
-4.  **Paste the clean code:** Paste the copied code into the editor window in GitHub.
-
-5.  **Commit changes:** Scroll down and click the green "Commit changes" button.
-
-6.  **Wait:** Wait about 1 minute for GitHub to update the site.
-
-7.  **Visit your link:** Go to `https://amitiqnaax.github.io/iqagri-demo/` (or refresh it if it's already open). Your app should now work perfectly!
