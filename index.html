@@ -10,34 +10,37 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
         
+        /* Main Layout - Centers everything */
         body {
             font-family: 'Inter', sans-serif;
             background-color: #eef2f6;
             min-height: 100vh;
             margin: 0;
             display: flex;
-            flex-direction: row; 
+            flex-direction: row; /* Side by side on desktop */
             align-items: center;
             justify-content: center;
-            gap: 60px; 
-            overflow: hidden; 
+            gap: 60px; /* Space between controls and phone */
+            overflow: hidden; /* Prevent body scroll, handle inside phone */
         }
 
+        /* Controls Panel (Left Side) */
         .controls-panel {
             width: 320px;
             flex-shrink: 0;
             animation: fadeIn 0.5s ease-out;
         }
 
+        /* Phone Frame - The "Device" */
         .phone-frame {
             width: 375px;
-            height: 812px; 
-            max-height: 90vh; 
+            height: 812px; /* Standard iPhone Height */
+            max-height: 90vh; /* Vital: Shrinks to fit small laptop screens */
             background: #fff;
             border-radius: 50px;
             box-shadow: 
-                0 0 0 12px #1a1a1a, 
-                0 30px 60px -10px rgba(0, 0, 0, 0.4); 
+                0 0 0 12px #1a1a1a, /* The Bezel */
+                0 30px 60px -10px rgba(0, 0, 0, 0.4); /* The Drop Shadow */
             position: relative;
             overflow: hidden;
             display: flex;
@@ -46,6 +49,7 @@
             z-index: 10;
         }
 
+        /* The Notch */
         .notch {
             position: absolute;
             top: 0;
@@ -59,17 +63,18 @@
             z-index: 50;
         }
 
+        /* Mobile Responsiveness */
         @media (max-width: 900px) {
             body {
                 flex-direction: column;
                 padding: 20px;
                 gap: 20px;
-                overflow-y: auto; 
+                overflow-y: auto; /* Allow scrolling on mobile */
             }
             .controls-panel {
                 width: 100%;
                 max-width: 375px;
-                order: 2; 
+                order: 2; /* Move controls below phone */
             }
             .phone-frame {
                 order: 1;
@@ -77,15 +82,18 @@
             }
         }
 
+        /* Utilities */
         .no-scrollbar::-webkit-scrollbar { display: none; }
         .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
 
+        /* Animations */
         @keyframes slideUp { from { transform: translateY(100%); } to { transform: translateY(0); } }
         @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
         
         .slide-up { animation: slideUp 0.3s ease-out forwards; }
         .fade-in { animation: fadeIn 0.3s ease-out forwards; }
 
+        /* Visual Badges */
         .strategy-badge {
             position: absolute;
             z-index: 40;
@@ -105,6 +113,7 @@
         .show-strategy .premium-feature { border: 2px dashed #a855f7; position: relative; }
         .premium-badge { background: rgba(168, 85, 247, 0.95); color: white; border: 1px solid #7e22ce; }
 
+        /* Chat Bubble Notification */
         .chat-bubble { position: relative; }
         .chat-bubble::after {
             content: '2';
@@ -123,8 +132,10 @@
             border: 2px solid white;
         }
 
+        /* Hindi Report Specific Styles */
         .hindi-text { font-family: 'Noto Sans Devanagari', sans-serif; }
         
+        /* Simulated Satellite Pixel Maps (CSS Grid) */
         .sat-map {
             display: grid;
             grid-template-columns: repeat(10, 1fr);
@@ -137,20 +148,25 @@
         }
         .pixel { width: 100%; height: 100%; }
 
+        /* NDVI Colors (Green to Red) */
         .ndvi-good { background-color: #166534; }
         .ndvi-avg { background-color: #84cc16; }
         .ndvi-bad { background-color: #ef4444; }
 
+        /* NDWI Colors (Blue to Yellow) */
         .ndwi-wet { background-color: #2563eb; }
         .ndwi-dry { background-color: #fef08a; }
 
+        /* SOC Colors (Brown Scale) */
         .soc-high { background-color: #3f2c22; }
         .soc-low { background-color: #a89078; }
     </style>
 </head>
 <body>
 
+    <!-- Left Panel: Instructions & Controls -->
     <div class="controls-panel">
+        <!-- Main Card -->
         <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-200 mb-6">
             <div class="flex items-center gap-2 mb-2">
                 <div class="w-8 h-8 bg-green-600 rounded-lg flex items-center justify-center text-white">
@@ -158,7 +174,7 @@
                 </div>
                 <h1 class="text-2xl font-bold text-gray-800">iQAgri</h1>
             </div>
-            <p class="text-sm text-gray-500 mb-6">Interactive Super App Simulator.</p>
+            <p class="text-sm text-gray-500 mb-6">Super App Simulator (Consolidated)</p>
             
             <div class="flex items-center justify-between bg-gray-50 p-3 rounded-xl border border-gray-100">
                 <span class="text-sm font-semibold text-gray-700">Strategy Mode</span>
@@ -167,42 +183,48 @@
                     <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-green-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-yellow-500"></div>
                 </label>
             </div>
-            <p class="text-xs text-gray-400 mt-2">Toggle to reveal monetization points.</p>
+            <p class="text-xs text-gray-400 mt-2">Toggle to reveal revenue streams.</p>
         </div>
 
+        <!-- Guide Card -->
         <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-200">
-            <h3 class="font-bold text-gray-800 mb-4 text-sm uppercase tracking-wider">Key Features</h3>
+            <h3 class="font-bold text-gray-800 mb-4 text-sm uppercase tracking-wider">Key Modules</h3>
             <ul class="space-y-4 text-sm text-gray-600">
                 <li class="flex items-center gap-3">
-                    <div class="w-8 h-8 rounded-full bg-green-100 flex items-center justify-center text-green-600"><i class="fa-solid fa-house"></i></div>
-                    <span><strong>Home:</strong> Branding & Weather</span>
+                    <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center text-blue-600"><i class="fa-solid fa-magnifying-glass"></i></div>
+                    <span><strong>Records:</strong> Govt Database</span>
+                </li>
+                <li class="flex items-center gap-3">
+                    <div class="w-8 h-8 rounded-full bg-orange-100 flex items-center justify-center text-orange-600"><i class="fa-solid fa-plane-up"></i></div>
+                    <span><strong>Drone:</strong> Booking (New Services)</span>
                 </li>
                 <li class="flex items-center gap-3">
                     <div class="w-8 h-8 rounded-full bg-purple-100 flex items-center justify-center text-purple-600"><i class="fa-solid fa-satellite"></i></div>
-                    <span><strong>Farm:</strong> Satellite Maps (Pro)</span>
+                    <span><strong>Farm:</strong> Hindi Satellite Report</span>
                 </li>
                 <li class="flex items-center gap-3">
-                    <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center text-blue-600"><i class="fa-solid fa-building-columns"></i></div>
-                    <span><strong>Finance:</strong> Loans & Insurance</span>
-                </li>
-                <li class="flex items-center gap-3">
-                    <div class="w-8 h-8 rounded-full bg-cyan-100 flex items-center justify-center text-cyan-600"><i class="fa-solid fa-qrcode"></i></div>
-                    <span><strong>Pay:</strong> Fintech Integration</span>
+                    <div class="w-8 h-8 rounded-full bg-cyan-100 flex items-center justify-center text-cyan-600"><i class="fa-solid fa-building-columns"></i></div>
+                    <span><strong>Loans:</strong> KCC & Insurance</span>
                 </li>
             </ul>
         </div>
     </div>
 
+    <!-- Center: Phone Simulator -->
     <div class="phone-frame" id="app-container">
+        <!-- Notch -->
         <div class="notch"></div>
 
+        <!-- Status Bar -->
         <div class="h-8 bg-green-700 w-full flex justify-between items-center px-6 text-[10px] text-white font-medium z-40 mt-3 pt-1 sticky top-0">
             <span>10:05 AM</span>
             <div class="flex gap-1"><i class="fa-solid fa-signal"></i><i class="fa-solid fa-wifi"></i><i class="fa-solid fa-battery-full"></i></div>
         </div>
 
+        <!-- DYNAMIC SCREEN CONTENT -->
         <div id="screen-content" class="flex-1 overflow-y-auto no-scrollbar bg-gray-50 relative pb-20"></div>
 
+        <!-- BOTTOM NAVIGATION BAR -->
         <div class="bg-white border-t border-gray-200 h-20 flex justify-around items-center px-2 z-40 absolute bottom-0 w-full shadow-[0_-5px_15px_rgba(0,0,0,0.05)]">
             <button onclick="loadScreen('home')" class="flex flex-col items-center gap-1 p-2 w-1/5 text-gray-400 hover:text-green-600 transition">
                 <i class="fa-solid fa-house text-xl"></i>
@@ -215,6 +237,7 @@
                 <span class="text-[10px] font-medium">Shop</span>
             </button>
 
+            <!-- CENTRAL PAY BUTTON -->
             <div class="relative -top-6">
                 <button onclick="loadScreen('wallet')" class="w-16 h-16 bg-gradient-to-tr from-cyan-600 to-blue-600 rounded-full flex flex-col items-center justify-center text-white shadow-lg border-4 border-white monetizable transition active:scale-95 hover:shadow-cyan-200 hover:-translate-y-1">
                     <div class="strategy-badge -top-3 -right-6 w-24">iQAgri Pay</div>
@@ -237,6 +260,7 @@
         </div>
     </div>
 
+    <!-- Mobile Toggle Button (Visible only on small screens) -->
     <div class="fixed bottom-4 right-4 md:hidden z-50">
         <button onclick="document.getElementById('strategy-toggle').click()" class="bg-yellow-500 text-white w-14 h-14 rounded-full shadow-lg flex items-center justify-center hover:bg-yellow-600 transition">
             <i class="fa-solid fa-lightbulb text-xl"></i>
@@ -244,6 +268,7 @@
     </div>
 
     <script>
+        // --- APP LOGIC ---
         let isStrategyMode = false;
         let isPro = false;
 
@@ -293,27 +318,37 @@
                     </div>
                 </div>
 
+                <!-- Expanded Grid for All Features -->
                 <div class="px-4 -mt-8 relative z-10">
-                    <div class="bg-white rounded-2xl p-6 shadow-md grid grid-cols-4 gap-2">
+                    <div class="bg-white rounded-2xl p-6 shadow-md grid grid-cols-3 gap-4">
                         <div onclick="loadScreen('wallet')" class="flex flex-col items-center gap-2 cursor-pointer hover:scale-105 transition group">
                             <div class="w-12 h-12 bg-cyan-50 text-cyan-600 rounded-2xl flex items-center justify-center group-hover:bg-cyan-100 transition"><i class="fa-solid fa-qrcode text-xl"></i></div>
                             <span class="text-[10px] font-medium text-gray-600">Scan</span>
                         </div>
-                        <div onclick="loadScreen('records')" class="flex flex-col items-center gap-2 cursor-pointer hover:scale-105 transition group">
-                            <div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center group-hover:bg-blue-100 transition"><i class="fa-solid fa-magnifying-glass text-xl"></i></div>
-                            <span class="text-[10px] font-medium text-gray-600">Records</span>
+                        <div onclick="loadScreen('mandi')" class="flex flex-col items-center gap-2 cursor-pointer hover:scale-105 transition group">
+                            <div class="w-12 h-12 bg-orange-50 text-orange-600 rounded-2xl flex items-center justify-center group-hover:bg-orange-100 transition"><i class="fa-solid fa-wheat-awn text-xl"></i></div>
+                            <span class="text-[10px] font-medium text-gray-600">Mandi</span>
                         </div>
                         <div onclick="loadScreen('shop')" class="flex flex-col items-center gap-2 cursor-pointer hover:scale-105 transition group">
                             <div class="w-12 h-12 bg-green-50 text-green-600 rounded-2xl flex items-center justify-center group-hover:bg-green-100 transition"><i class="fa-solid fa-cart-flatbed text-xl"></i></div>
-                            <span class="text-[10px] font-medium text-gray-600">Buy</span>
+                            <span class="text-[10px] font-medium text-gray-600">Shop</span>
                         </div>
                         <div onclick="loadScreen('loans')" class="flex flex-col items-center gap-2 cursor-pointer hover:scale-105 transition group">
                             <div class="w-12 h-12 bg-purple-50 text-purple-600 rounded-2xl flex items-center justify-center group-hover:bg-purple-100 transition"><i class="fa-solid fa-tractor text-xl"></i></div>
                             <span class="text-[10px] font-medium text-gray-600">Loans</span>
                         </div>
+                         <div onclick="loadScreen('droneBooking')" class="flex flex-col items-center gap-2 cursor-pointer hover:scale-105 transition group">
+                            <div class="w-12 h-12 bg-orange-100 text-orange-600 rounded-2xl flex items-center justify-center group-hover:bg-orange-200 transition"><i class="fa-solid fa-plane-up text-xl"></i></div>
+                            <span class="text-[10px] font-medium text-gray-600">Drone</span>
+                        </div>
+                        <div onclick="loadScreen('records')" class="flex flex-col items-center gap-2 cursor-pointer hover:scale-105 transition group">
+                            <div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center group-hover:bg-blue-100 transition"><i class="fa-solid fa-file-contract text-xl"></i></div>
+                            <span class="text-[10px] font-medium text-gray-600">Records</span>
+                        </div>
                     </div>
                 </div>
 
+                <!-- Market Trends -->
                 <div class="px-4 mt-6">
                     <div class="flex justify-between items-end mb-3">
                         <h3 class="font-bold text-gray-800">Mandi Rates (Live)</h3>
@@ -480,17 +515,76 @@
                                     <p class="text-[10px] text-gray-500 mb-3">Interest: 9% p.a.</p>
                                     <button class="w-full py-2 border border-purple-600 text-purple-600 text-xs font-bold rounded-lg hover:bg-purple-50">Apply Now</button>
                                 </div>
-                                <div class="min-w-[220px] bg-white border border-gray-200 rounded-xl p-4 shadow-sm">
-                                    <div class="flex items-center gap-2 mb-2">
-                                        <div class="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center text-orange-600"><i class="fa-solid fa-warehouse"></i></div>
-                                        <span class="text-xs font-bold text-gray-700">Warehouse Loan</span>
-                                    </div>
-                                    <p class="text-lg font-bold text-gray-800 mb-1">Up to ₹5 Lakhs</p>
-                                    <p class="text-[10px] text-gray-500 mb-3">Interest: 8.5% p.a.</p>
-                                    <button class="w-full py-2 border border-orange-600 text-orange-600 text-xs font-bold rounded-lg hover:bg-orange-50">Apply Now</button>
-                                </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            `,
+
+            droneBooking: () => `
+                <div class="bg-white min-h-full pb-24 flex flex-col slide-up">
+                    <div class="bg-orange-50 p-6 rounded-b-[30px] shadow-sm mb-4">
+                         <div class="flex justify-between items-center mb-4">
+                             <button onclick="loadScreen('home')" class="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-sm"><i class="fa-solid fa-arrow-left text-orange-600"></i></button>
+                             <h2 class="text-lg font-bold text-gray-800">Schedule Drone</h2>
+                             <i class="fa-solid fa-plane-up text-orange-600 text-xl"></i>
+                         </div>
+                         <p class="text-xs text-gray-500 text-center">Select a service to proceed</p>
+                    </div>
+                    
+                    <div class="px-6 space-y-6">
+                        <!-- Service Cards Grid -->
+                        <div class="grid grid-cols-2 gap-4">
+                            <!-- 1. Crop Monitoring -->
+                            <div class="p-4 border border-gray-200 rounded-2xl text-center hover:border-green-500 hover:bg-green-50 transition cursor-pointer shadow-sm">
+                                <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-2 text-green-600"><i class="fa-solid fa-camera"></i></div>
+                                <h4 class="text-xs font-bold text-gray-800">Crop Monitoring</h4>
+                                <p class="text-[10px] text-gray-500 mt-1">₹799 / visit</p>
+                            </div>
+
+                            <!-- 2. Pesticide Spraying -->
+                            <div class="p-4 border border-gray-200 rounded-2xl text-center hover:border-green-500 hover:bg-green-50 transition cursor-pointer shadow-sm">
+                                <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-2 text-green-600"><i class="fa-solid fa-spray-can"></i></div>
+                                <h4 class="text-xs font-bold text-gray-800">Pesticide Spraying</h4>
+                                <p class="text-[10px] text-gray-500 mt-1">₹1,299 / acre</p>
+                            </div>
+
+                            <!-- 3. Yield Estimation -->
+                            <div class="p-4 border border-gray-200 rounded-2xl text-center hover:border-green-500 hover:bg-green-50 transition cursor-pointer shadow-sm">
+                                <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-2 text-green-600"><i class="fa-solid fa-chart-line"></i></div>
+                                <h4 class="text-xs font-bold text-gray-800">Yield Estimation</h4>
+                                <p class="text-[10px] text-gray-500 mt-1">₹599 / visit</p>
+                            </div>
+
+                            <!-- 4. Soil Analysis -->
+                            <div class="p-4 border border-gray-200 rounded-2xl text-center hover:border-green-500 hover:bg-green-50 transition cursor-pointer shadow-sm">
+                                <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-2 text-green-600"><i class="fa-solid fa-flask"></i></div>
+                                <h4 class="text-xs font-bold text-gray-800">Soil Analysis</h4>
+                                <p class="text-[10px] text-gray-500 mt-1">₹899 / test</p>
+                            </div>
+                        </div>
+
+                        <div class="space-y-4">
+                            <h3 class="font-bold text-gray-800 text-sm">Select Date</h3>
+                             <div class="flex gap-2 overflow-x-auto no-scrollbar">
+                                <div class="min-w-[70px] p-3 rounded-xl border border-gray-200 text-center">
+                                    <div class="text-[10px] text-gray-400 uppercase">Tue</div>
+                                    <div class="font-bold text-lg">24</div>
+                                </div>
+                                <div class="min-w-[70px] p-3 rounded-xl bg-orange-600 text-white text-center shadow-md">
+                                    <div class="text-[10px] text-orange-100 uppercase">Wed</div>
+                                    <div class="font-bold text-lg">25</div>
+                                </div>
+                                <div class="min-w-[70px] p-3 rounded-xl border border-gray-200 text-center">
+                                    <div class="text-[10px] text-gray-400 uppercase">Thu</div>
+                                    <div class="font-bold text-lg">26</div>
+                                </div>
+                             </div>
+                        </div>
+
+                        <button onclick="loadScreen('wallet')" class="w-full py-4 bg-black text-white font-bold rounded-xl shadow-lg flex justify-center items-center gap-2 active:scale-95 transition">
+                            Book Now <i class="fa-solid fa-arrow-right"></i>
+                        </button>
                     </div>
                 </div>
             `,
